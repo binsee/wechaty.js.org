@@ -10,8 +10,8 @@ sidebar_label: Mock
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-mock.svg)](https://badge.fury.io/js/wechaty-puppet-mock)
 [![npm (tag)](https://img.shields.io/npm/v/wechaty-puppet-mock/next.svg)](https://www.npmjs.com/package/wechaty-puppet-mock?activeTab=versions)
 
-- Repo: <https://github.com/wechaty/wechaty-puppet-mock>
-- Support & Feedback: <https://github.com/wechaty/wechaty-puppet-mock/issues>
+- Repo: [https://github.com/wechaty/wechaty-puppet-mock](https://github.com/wechaty/wechaty-puppet-mock)
+- Support & Feedback: [https://github.com/wechaty/wechaty-puppet-mock/issues](https://github.com/wechaty/wechaty-puppet-mock/issues)
 
 ## Features
 
@@ -146,7 +146,7 @@ console.log(config)
 
 ![Math Master Wechaty Game](https://raw.githubusercontent.com/wechaty/wechaty-vorpal-contrib/HEAD/docs/images/math-master.png)
 
-You can read the unit testing script at: <https://github.com/wechaty/wechaty-vorpal-contrib/blob/master/src/contrib/math_master/math_master.spec.ts>
+You can read the unit testing script at: [https://github.com/wechaty/wechaty-vorpal-contrib/blob/master/src/contrib/math_master/math_master.spec.ts](https://github.com/wechaty/wechaty-vorpal-contrib/blob/master/src/contrib/math_master/math_master.spec.ts)
 
 ## History
 

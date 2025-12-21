@@ -63,12 +63,12 @@ See more:
   * [new Wechaty\(\[options\]\)](wechaty.md#new_Wechaty_new)
   * _instance_
     * [.on\(event, listener\)](wechaty.md#Wechaty+on) ⇒ [`Wechaty`](wechaty.md#Wechaty)
-    * [.start\(\)](wechaty.md#Wechaty+start) ⇒ `Promise <void>`
-    * [.stop\(\)](wechaty.md#Wechaty+stop) ⇒ `Promise <void>`
-    * [.logout\(\)](wechaty.md#Wechaty+logout) ⇒ `Promise <void>`
+    * [.start\(\)](wechaty.md#Wechaty+start) ⇒ Promise\<void\>
+    * [.stop\(\)](wechaty.md#Wechaty+stop) ⇒ Promise\<void\>
+    * [.logout\(\)](wechaty.md#Wechaty+logout) ⇒ Promise\<void\>
     * [.logonoff\(\)](wechaty.md#Wechaty+logonoff) ⇒ `boolean`
     * [.userSelf\(\)](wechaty.md#Wechaty+userSelf) ⇒ `ContactSelf`
-    * [.say\(textOrContactOrFileOrUrl\)](wechaty.md#Wechaty+say) ⇒ `Promise <void>`
+    * [.say\(textOrContactOrFileOrUrl\)](wechaty.md#Wechaty+say) ⇒ Promise\<void\>
   * _static_
     * [.instance\(\[options\]\)](wechaty.md#Wechaty.instance)
 
@@ -85,7 +85,7 @@ Creates an instance of Wechaty.
 ```javascript
 import { Wechaty }  from 'wechaty'
 const bot = new Wechaty()
-bot.on('scan',    (qrcode, status) => console.log(['https://api.qrserver.com/v1/create-qr-code/?data=',encodeURIComponent(qrcode),'&size=220x220&margin=20',].join('')))
+bot.on('scan',    (qrcode, status) =\> console.log(['https://api.qrserver.com/v1/create-qr-code/?data=',encodeURIComponent(qrcode),'&size=220x220&margin=20',].join('')))
 bot.on('login',   user => console.log(`User ${user} logined`))
 bot.on('message', message => console.log(`Message: ${message}`))
 bot.start()
@@ -229,11 +229,11 @@ bot.on('error', (error) => {
 })
 ```
 
-### wechaty.start\(\) ⇒ `Promise <void>`
+### wechaty.start\(\) ⇒ Promise\<void\>
 
 When you start the bot, bot will begin to login, need you wechat scan qrcode to login
 
-> Tips: All the bot operation needs to be triggered after start\(\) is done
+\> Tips: All the bot operation needs to be triggered after start\(\) is done
 
 **Kind**: instance method of [`Wechaty`](wechaty.md#Wechaty)
 
@@ -244,7 +244,7 @@ await bot.start()
 // do other stuff with bot here
 ```
 
-### wechaty.stop\(\) ⇒ `Promise <void>`
+### wechaty.stop\(\) ⇒ Promise\<void\>
 
 Stop the bot
 
@@ -256,7 +256,7 @@ Stop the bot
 await bot.stop()
 ```
 
-### wechaty.logout\(\) ⇒ `Promise <void>`
+### wechaty.logout\(\) ⇒ Promise\<void\>
 
 Logout the bot
 
@@ -297,17 +297,17 @@ const contact = bot.userSelf()
 console.log(`Bot is ${contact.name()}`)
 ```
 
-### wechaty.say\(textOrContactOrFileOrUrl\) ⇒ `Promise <void>`
+### wechaty.say\(textOrContactOrFileOrUrl\) ⇒ Promise\<void\>
 
 Send message to userSelf, in other words, bot send message to itself.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+\> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 **Kind**: instance method of [`Wechaty`](wechaty.md#Wechaty)
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| textOrContactOrFileOrUrl | `string` \| `Contact` \| `FileBox` \| `UrlLink` | send text, Contact, file or Link to bot. &lt;/br&gt; You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
+| textOrContactOrFileOrUrl | `string` \| `Contact` \| `FileBox` \| `UrlLink` | send text, Contact, file or Link to bot. &lt;/br> You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
 
 #### Example
 
@@ -416,7 +416,7 @@ Wechaty Class Event Type
 | room-topic | `string` | Get topic event, emitted when someone change room topic. |
 | room-leave | `string` | Emit when anyone leave the room. |
 | room-invite | `string` | Emit when there is a room invitation, see more in  [RoomInvitation](room-invitation.md)                                    If someone leaves the room by themselves, wechat will not notice other people in the room, so the bot will never get the "leave" event. |
-| scan | `string` | A scan event will be emitted when the bot needs to show you a QR Code for scanning. &lt;/br&gt;                                    It is recommend to install qrcode-terminal\(run `npm install qrcode-terminal`\) in order to show qrcode in the terminal. |
+| scan | `string` | A scan event will be emitted when the bot needs to show you a QR Code for scanning. &lt;/br>                                    It is recommend to install qrcode-terminal\(run `npm install qrcode-terminal`\) in order to show qrcode in the terminal. |
 
 ## WechatyEventFunction
 
@@ -427,15 +427,15 @@ Wechaty Class Event Function
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| error | `function` | \(this: Wechaty, error: Error\) =&gt; void callback function |
-| login | `function` | \(this: Wechaty, user: ContactSelf\)=&gt; void |
-| logout | `function` | \(this: Wechaty, user: ContactSelf\) =&gt; void |
-| scan | `function` | \(this: Wechaty, url: string, code: number\) =&gt; void |
-| heartbeat | `function` | \(this: Wechaty, data: any\) =&gt; void |
-| friendship | `function` | \(this: Wechaty, friendship: Friendship\) =&gt; void |
-| message | `function` | \(this: Wechaty, message: Message\) =&gt; void |
-| ready | `function` | \(this: Wechaty\) =&gt; void |
-| room-join | `function` | \(this: Wechaty, room: Room, inviteeList: Contact\[\],  inviter: Contact\) =&gt; void |
-| room-topic | `function` | \(this: Wechaty, room: Room, newTopic: string, oldTopic: string, changer: Contact\) =&gt; void |
-| room-leave | `function` | \(this: Wechaty, room: Room, leaverList: Contact\[\]\) =&gt; void |
-| room-invite | `function` | \(this: Wechaty, room: Room, leaverList: Contact\[\]\) =&gt; void                                          see more in  [RoomInvitation](room-invitation.md) |
+| error | `function` | \(this: Wechaty, error: Error\) => void callback function |
+| login | `function` | \(this: Wechaty, user: ContactSelf\)=> void |
+| logout | `function` | \(this: Wechaty, user: ContactSelf\) => void |
+| scan | `function` | \(this: Wechaty, url: string, code: number\) => void |
+| heartbeat | `function` | \(this: Wechaty, data: any\) => void |
+| friendship | `function` | \(this: Wechaty, friendship: Friendship\) => void |
+| message | `function` | \(this: Wechaty, message: Message\) => void |
+| ready | `function` | \(this: Wechaty\) => void |
+| room-join | `function` | \(this: Wechaty, room: Room, inviteeList: Contact\[\],  inviter: Contact\) => void |
+| room-topic | `function` | \(this: Wechaty, room: Room, newTopic: string, oldTopic: string, changer: Contact\) => void |
+| room-leave | `function` | \(this: Wechaty, room: Room, leaverList: Contact\[\]\) => void |
+| room-invite | `function` | \(this: Wechaty, room: Room, leaverList: Contact\[\]\) => void                                          see more in  [RoomInvitation](room-invitation.md) |

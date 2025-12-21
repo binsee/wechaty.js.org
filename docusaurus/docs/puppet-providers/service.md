@@ -10,8 +10,8 @@ sidebar_label: Service
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-service.svg)](https://badge.fury.io/js/wechaty-puppet-service)
 [![npm (tag)](https://img.shields.io/npm/v/wechaty-puppet-service/next.svg)](https://www.npmjs.com/package/wechaty-puppet-service?activeTab=versions)
 
-- Repo: <https://github.com/wechaty/wechaty-puppet-service>
-- Support & Feedback: <https://github.com/wechaty/wechaty-puppet-service/issues>
+- Repo: [https://github.com/wechaty/wechaty-puppet-service](https://github.com/wechaty/wechaty-puppet-service)
+- Support & Feedback: [https://github.com/wechaty/wechaty-puppet-service/issues](https://github.com/wechaty/wechaty-puppet-service/issues)
 
 ## Features
 

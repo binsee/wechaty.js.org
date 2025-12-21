@@ -56,27 +56,27 @@ The following diagram shows out that we can reuse almost everything in TypeScrip
 
 ### Wechaty Internal Modules
 
-1. **Class Wechaty @wj-mCat** TS SLOC(1160): <https://github.com/wechaty/wechaty/blob/master/src/wechaty.ts>
-1. **Class Contact** TS SLOC(804): <https://github.com/wechaty/wechaty/blob/master/src/user/contact.ts>
-1. **Class ContactSelf** TS SLOC(199): <https://github.com/wechaty/wechaty/blob/master/src/user/contact-self.ts>
-1. **Class Message** TS SLOC(1054): <https://github.com/wechaty/wechaty/blob/master/src/user/message.ts>
-1. **Class Room** TS SLOC(1194): <https://github.com/wechaty/wechaty/blob/master/src/user/room.ts>
-1. **Class Image @wj-mCat** TS SLOC(60): <https://github.com/wechaty/wechaty/blob/master/src/user/image.ts>
-1. **Class Accessory @huan** TS SLOC(179): <https://github.com/wechaty/wechaty/blob/master/src/accessory.ts>
-1. **Class Config @wj-mCat**  TS SLOC(187): <https://github.com/wechaty/wechaty/blob/master/src/config.ts>
-1. **Class Favorite** TS SLOC(52): <https://github.com/wechaty/wechaty/blob/master/src/user/favorite.ts>
-1. **Class Friendship** TS SLOC(417): <https://github.com/wechaty/wechaty/blob/master/src/user/friendship.ts>
-1. **Class MiniProgram** TS SLOC(70): <https://github.com/wechaty/wechaty/blob/master/src/user/mini-program.ts>
-1. **Class RoomInvitation** TS SLOC(317): <https://github.com/wechaty/wechaty/blob/master/src/user/room-invitation.ts>
-1. **Class Tag** TS SLOC(190): <https://github.com/wechaty/wechaty/blob/master/src/user/tag.ts>
-1. **Class UrlLink** TS SLOC(107): <https://github.com/wechaty/wechaty/blob/master/src/user/url-link.ts>
+1. **Class Wechaty @wj-mCat** TS SLOC(1160): [https://github.com/wechaty/wechaty/blob/master/src/wechaty.ts](https://github.com/wechaty/wechaty/blob/master/src/wechaty.ts)
+1. **Class Contact** TS SLOC(804): [https://github.com/wechaty/wechaty/blob/master/src/user/contact.ts](https://github.com/wechaty/wechaty/blob/master/src/user/contact.ts)
+1. **Class ContactSelf** TS SLOC(199): [https://github.com/wechaty/wechaty/blob/master/src/user/contact-self.ts](https://github.com/wechaty/wechaty/blob/master/src/user/contact-self.ts)
+1. **Class Message** TS SLOC(1054): [https://github.com/wechaty/wechaty/blob/master/src/user/message.ts](https://github.com/wechaty/wechaty/blob/master/src/user/message.ts)
+1. **Class Room** TS SLOC(1194): [https://github.com/wechaty/wechaty/blob/master/src/user/room.ts](https://github.com/wechaty/wechaty/blob/master/src/user/room.ts)
+1. **Class Image @wj-mCat** TS SLOC(60): [https://github.com/wechaty/wechaty/blob/master/src/user/image.ts](https://github.com/wechaty/wechaty/blob/master/src/user/image.ts)
+1. **Class Accessory @huan** TS SLOC(179): [https://github.com/wechaty/wechaty/blob/master/src/accessory.ts](https://github.com/wechaty/wechaty/blob/master/src/accessory.ts)
+1. **Class Config @wj-mCat**  TS SLOC(187): [https://github.com/wechaty/wechaty/blob/master/src/config.ts](https://github.com/wechaty/wechaty/blob/master/src/config.ts)
+1. **Class Favorite** TS SLOC(52): [https://github.com/wechaty/wechaty/blob/master/src/user/favorite.ts](https://github.com/wechaty/wechaty/blob/master/src/user/favorite.ts)
+1. **Class Friendship** TS SLOC(417): [https://github.com/wechaty/wechaty/blob/master/src/user/friendship.ts](https://github.com/wechaty/wechaty/blob/master/src/user/friendship.ts)
+1. **Class MiniProgram** TS SLOC(70): [https://github.com/wechaty/wechaty/blob/master/src/user/mini-program.ts](https://github.com/wechaty/wechaty/blob/master/src/user/mini-program.ts)
+1. **Class RoomInvitation** TS SLOC(317): [https://github.com/wechaty/wechaty/blob/master/src/user/room-invitation.ts](https://github.com/wechaty/wechaty/blob/master/src/user/room-invitation.ts)
+1. **Class Tag** TS SLOC(190): [https://github.com/wechaty/wechaty/blob/master/src/user/tag.ts](https://github.com/wechaty/wechaty/blob/master/src/user/tag.ts)
+1. **Class UrlLink** TS SLOC(107): [https://github.com/wechaty/wechaty/blob/master/src/user/url-link.ts](https://github.com/wechaty/wechaty/blob/master/src/user/url-link.ts)
 
 ### Wechaty External Modules
 
-1. **Class FileBox** TS SLOC(638): <https://github.com/huan/file-box/blob/master/src/file-box.ts>
-1. **Class MemoryCard** TS SLOC(376): <https://github.com/huan/memory-card/blob/master/src/memory-card.ts>
-1. **Class WechatyPuppet** TS SLOC(1115): <https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts>  
-1. **Class WechatyPuppetHostie** TS SLOC(909): <https://github.com/wechaty/wechaty-puppet-hostie/blob/master/src/grpc/puppet-client.ts>
+1. **Class FileBox** TS SLOC(638): [https://github.com/huan/file-box/blob/master/src/file-box.ts](https://github.com/huan/file-box/blob/master/src/file-box.ts)
+1. **Class MemoryCard** TS SLOC(376): [https://github.com/huan/memory-card/blob/master/src/memory-card.ts](https://github.com/huan/memory-card/blob/master/src/memory-card.ts)
+1. **Class WechatyPuppet** TS SLOC(1115): [https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts](https://github.com/wechaty/wechaty-puppet/blob/master/src/puppet.ts)  
+1. **Class WechatyPuppetHostie** TS SLOC(909): [https://github.com/wechaty/wechaty-puppet-hostie/blob/master/src/grpc/puppet-client.ts](https://github.com/wechaty/wechaty-puppet-hostie/blob/master/src/grpc/puppet-client.ts)
 
 ## History
 

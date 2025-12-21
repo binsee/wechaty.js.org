@@ -47,9 +47,9 @@ You can visit the links below which gives a more detailed step by step descripti
 Through the above steps, you can publish a token with any existing wechaty puppets.
 Other Related issues are listed below :
 
-1. <https://github.com/wechaty/python-wechaty/issues/58>
-2. <https://github.com/wechaty/wechaty/issues/1984>
-3. <https://github.com/wechaty/wechaty/issues/1153>
+1. [https://github.com/wechaty/python-wechaty/issues/58](https://github.com/wechaty/python-wechaty/issues/58)
+2. [https://github.com/wechaty/wechaty/issues/1984](https://github.com/wechaty/wechaty/issues/1984)
+3. [https://github.com/wechaty/wechaty/issues/1153](https://github.com/wechaty/wechaty/issues/1153)
 
 ### 2. Register the Token with Protocol
 

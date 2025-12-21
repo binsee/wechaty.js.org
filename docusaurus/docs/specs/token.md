@@ -51,7 +51,7 @@ export const UUIDv4 = () => {
 1. Copy from below:
     <UUIDv4 />
 2. Visit UUID Generator:
-    <https://www.uuidgenerator.net/version4>
+    [https://www.uuidgenerator.net/version4](https://www.uuidgenerator.net/version4)
 
 ### Wechaty Puppet Service Token Validator
 

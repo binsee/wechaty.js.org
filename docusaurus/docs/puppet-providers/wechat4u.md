@@ -12,8 +12,8 @@ sidebar_label: WeChat4U
 
 Wechat4U is an excellent wechat bot framework that supports both Node.js and Browser, with rich features and an active community of experienced contributors. PuppetWechat4U will let wechaty users have the second way to use wechaty, not only by Browser Hook but also by Server API Call.
 
-- Repo: <https://github.com/wechaty/wechaty-puppet-wechat4u>
-- Support & Feedback: <https://github.com/wechaty/wechaty-puppet-wechat4u/issues>
+- Repo: [https://github.com/wechaty/wechaty-puppet-wechat4u](https://github.com/wechaty/wechaty-puppet-wechat4u)
+- Support & Feedback: [https://github.com/wechaty/wechaty-puppet-wechat4u/issues](https://github.com/wechaty/wechaty-puppet-wechat4u/issues)
 
 ## Features
 

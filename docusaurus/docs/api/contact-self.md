@@ -14,12 +14,14 @@ Bot itself will be encapsulated as a ContactSelf.
 
 * [ContactSelf](contact-self.md#contactself)
   * [intance](contact-self.md#contactself)
-    * [contactSelf.avatar\(\[file\]\) ⇒ `Promise <void | FileBox>`](contact-self.md#contactselfavatarfile-⇒-promise)
-    * [contactSelf.qrcode\(\) ⇒ `Promise <string>`](contact-self.md#contactselfqrcode-⇒-promise)
-    * [contactSelf.signature\(signature\) ⇒ `Promise <string>`](contact-self.md#contactselfsignaturesignature)
-    * [contactSelf.name\(\[name\]\) ⇒ `Promise <void> | string`](contact-self.md#contactselfname-⇒-promisestring)
+    * [contactSelf.avatar\(\[file\]\) ⇒ `Promise<void | FileBox>`](contact-self.md#contactselfavatarfile-⇒-promise)
+    * [contactSelf.qrcode\(\) ⇒ `Promise<string>`](contact-self.md#contactselfqrcode-⇒-promise)
+    * [contactSelf.signature\(signature\) ⇒ `Promise<string>`](contact-self.md#contactselfsignaturesignature)
+    * [contactSelf.name\(\[name\]\) ⇒ `Promise<void>` | string](contact-self.md#contactselfname-⇒-promisestring)
 
-### contactSelf.avatar\(\[file\]\) ⇒ `Promise <void | FileBox>`
+
+
+### contactSelf.avatar\(\[file\]\) ⇒ `Promise<void | FileBox>`
 
 GET / SET bot avatar
 
@@ -29,12 +31,12 @@ GET / SET bot avatar
 | :--- | :--- |
 | \[file\] | `FileBox` |
 
-**Example** _\( GET the avatar for bot, return {Promise&lt;FileBox&gt;}\)_
+**Example** _\( GET the avatar for bot, return {`Promise<FileBox>`}\)_
 
 ```javascript
 // Save avatar to local file like `1-name.jpg`
 
-bot.on('login', async user => {
+bot.on('login', async user =\> {
   console.log(`user ${user} login`)
   const file = await user.avatar()
   const name = file.name
@@ -55,7 +57,7 @@ bot.on('login', user => {
 })
 ```
 
-### contactSelf.qrcode\(\) ⇒ `Promise <string>`
+### contactSelf.qrcode\(\) ⇒ `Promise<string>`
 
 Get bot qrcode
 
@@ -65,7 +67,7 @@ Get bot qrcode
 
 ```javascript
 import { generate } from 'qrcode-terminal'
-bot.on('login', async user => {
+bot.on('login', async user =\> {
   console.log(`user ${user} login`)
   const qrcode = await user.qrcode()
   console.log(`Following is the bot qrcode!`)
@@ -73,7 +75,7 @@ bot.on('login', async user => {
 })
 ```
 
-### contactSelf.signature\(signature\) ⇒ `Promise <void>`
+### contactSelf.signature\(signature\) ⇒ `Promise<void>`
 
 Change bot signature
 
@@ -86,7 +88,7 @@ Change bot signature
 #### Example
 
 ```javascript
-bot.on('login', async user => {
+bot.on('login', async user =\> {
   console.log(`user ${user} login`)
   try {
     await user.signature(`Signature changed by wechaty on ${new Date()}`)
@@ -96,7 +98,7 @@ bot.on('login', async user => {
 })
 ```
 
-### contactSelf.name\(\[name\]\) ⇒ `Promise<void> | string`
+### contactSelf.name\(\[name\]\) ⇒ `Promise<void>` | string
 
 Get or change bot name.
 
@@ -109,7 +111,7 @@ Get or change bot name.
 #### Example
 
 ```javascript
-bot.on('login', async user => {
+bot.on('login', async user =\> {
   console.log(`user ${user} login`)
   const oldName = user.name() // get bot name
   try {

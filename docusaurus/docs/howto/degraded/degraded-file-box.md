@@ -222,4 +222,4 @@ class MyBot(Wechaty):
 
 ## About `FileBox`
 
-Learn more about how to use `FileBox` module by reading its document at <https://github.com/huan/file-box>
+Learn more about how to use `FileBox` module by reading its document at [https://github.com/huan/file-box](https://github.com/huan/file-box)

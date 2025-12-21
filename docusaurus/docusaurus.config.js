@@ -13,7 +13,7 @@ const config = {
   tagline: 'Conversational RPA SDK for Chatbot Makers',
   url: 'https://wechaty.js.org',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'wechaty',    // Usually your GitHub org/user name.

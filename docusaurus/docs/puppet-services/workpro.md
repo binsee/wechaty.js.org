@@ -39,7 +39,7 @@ Please scan the following QRCode with wechat or wecom:
 
   When you get your token, you'll also get the discovery service address of the token. (If not, please contact customer service.) If the address is not ```api.chatie.com```, then you have to set an environment variable to explicitly set it. You can do this by adding this to your environment variable list.
 
-  - Env: WECHATY_PUPPET_SERVICE_AUTHORITY={DISCOVER_ADDRESS} (Address is usually token-service-discovery-test.juzibot.com)
+  - Env: `WECHATY_PUPPET_SERVICE_AUTHORITY={DISCOVER_ADDRESS}` (Address is usually token-service-discovery-test.juzibot.com)
 
 ## Known Issues
 
@@ -64,4 +64,4 @@ Please scan the following QRCode with wechat or wecom:
 - [Wechaty Puppet Service WorkPro Launch Announcement](https://wechaty.js.org/2022/12/23/introducing-workpro-puppet/)
 - [Wechaty Puppet Service WorkPro Immigration Guide](https://wechaty.js.org/2023/01/18/workpro-immigration-guide/)
 
-Check out more blogs with the `workpro` tag at <https://wechaty.js.org/tags.html#workpro>
+Check out more blogs with the `workpro` tag at [https://wechaty.js.org/tags.html#workpro](https://wechaty.js.org/tags.html#workpro)

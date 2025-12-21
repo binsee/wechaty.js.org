@@ -35,17 +35,17 @@ title: 'Usage with Heroku'
 
 - [Creating a 'Deploy to Heroku' Button](https://devcenter.heroku.com/articles/heroku-button)
 - [Introducing Heroku Button](https://blog.heroku.com/heroku-button)
-- <https://github.com/heroku/button-sample>
+- [https://github.com/heroku/button-sample](https://github.com/heroku/button-sample)
 - [Heroku App.Json Manifest and Button Maker](https://www.expeditedssl.com/heroku-button-maker)
 - [Why does SIGTERM handling not work correctly in NodeJS with NPM?](https://help.heroku.com/ROG3H81R/why-does-sigterm-handling-not-work-correctly-in-nodejs-with-npm)
 
 ## Use Cases
 
-1. [Friday BOT](https://github.com/wechaty/friday) - <https://bot-friday.herokuapp.com/>
-1. [OSSBot](https://github.com/kaiyuanshe/OSS-bot) - <https://oss-bot-dev.herokuapp.com/>
-1. [Mike BO](https://github.com/huan/mike-bo) - <http://mike-bo.herokuapp.com/>
-1. [QiJi BOT](https://github.com/juzibot/qijibot) - <https://qiji-bot.herokuapp.com/>
-1. [Bot Ops](https://github.com/juzibot/botops) - <https://bot-ops.herokuapp.com/>
+1. [Friday BOT](https://github.com/wechaty/friday) - [https://bot-friday.herokuapp.com/](https://bot-friday.herokuapp.com/)
+1. [OSSBot](https://github.com/kaiyuanshe/OSS-bot) - [https://oss-bot-dev.herokuapp.com/](https://oss-bot-dev.herokuapp.com/)
+1. [Mike BO](https://github.com/huan/mike-bo) - [http://mike-bo.herokuapp.com/](http://mike-bo.herokuapp.com/)
+1. [QiJi BOT](https://github.com/juzibot/qijibot) - [https://qiji-bot.herokuapp.com/](https://qiji-bot.herokuapp.com/)
+1. [Bot Ops](https://github.com/juzibot/botops) - [https://bot-ops.herokuapp.com/](https://bot-ops.herokuapp.com/)
 1. [Rui Assistant BOT](https://github.com/juzibot/rui-bot)
 1. [Juzi.BOT](https://github.com/juzibot/juzi-bot)
 

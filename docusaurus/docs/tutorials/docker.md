@@ -121,7 +121,7 @@ export WECHATY_TOKEN="your token here"
 docker run -e WECHATY_TOKEN="$WECHATY_TOKEN" wechaty/wechaty
 ```
 
-`WECHATY_TOKEN` is required here, because you need this key to managing wechaty on the chatbot cloud manager: <https://www.chatie.io>
+`WECHATY_TOKEN` is required here, because you need this key to managing wechaty on the chatbot cloud manager: [https://www.chatie.io](https://www.chatie.io)
 
 ## Onbuild
 
@@ -145,8 +145,8 @@ docker build -t wechaty .
 
 ## SEE ALSO
 
-1. Wechaty Getting Started: <https://github.com/wechaty/wechaty-getting-started>
-2. Heroku Wechaty Getting Started: <https://github.com/wechaty/heroku-wechaty-getting-started>
+1. Wechaty Getting Started: [https://github.com/wechaty/wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started)
+2. Heroku Wechaty Getting Started: [https://github.com/wechaty/heroku-wechaty-getting-started](https://github.com/wechaty/heroku-wechaty-getting-started)
 
 ## AUTHOR
 

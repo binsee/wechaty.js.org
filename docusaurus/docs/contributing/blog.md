@@ -18,17 +18,17 @@ you can add a `published: false` to the front matter YAML.
 published: false
 ```
 
-### List on <https://wechaty.js.org/news/>
+### List on [https://wechaty.js.org/news/](https://wechaty.js.org/news/)
 
 If a post has a tag named `news`
-then it will be shown at <https://wechaty.js.org/news/>
+then it will be shown at [https://wechaty.js.org/news/](https://wechaty.js.org/news/)
 
 ```yaml
 tags:
   - news
 ```
 
-All posts will be showed at <https://wechaty.js.org/blog/>
+All posts will be showed at [https://wechaty.js.org/blog/](https://wechaty.js.org/blog/)
 
 ### Show Big Picture
 
@@ -56,7 +56,7 @@ This is based on ImageMagick.
 
 ## Submit Blog Post
 
-Submit your blog by creating a Pull Request at <https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts>
+Submit your blog by creating a Pull Request at [https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts](https://github.com/wechaty/wechaty.js.org/tree/master/jekyll/_posts)
 
 Please make sure the CI turns green, and if the CI fails, you need to check the error messages and fix all the problems before we can continue processing it.
 

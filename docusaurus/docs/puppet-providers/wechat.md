@@ -10,8 +10,8 @@ sidebar_label: WeChat
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-wechat.svg)](https://badge.fury.io/js/wechaty-puppet-wechat)
 [![npm (tag)](https://img.shields.io/npm/v/wechaty-puppet-wechat/next.svg)](https://www.npmjs.com/package/wechaty-puppet-wechat?activeTab=versions)
 
-- Repo: <https://github.com/wechaty/wechaty-puppet-wechat>
-- Support & Feedback: <https://github.com/wechaty/wechaty-puppet-wechat/issues>
+- Repo: [https://github.com/wechaty/wechaty-puppet-wechat](https://github.com/wechaty/wechaty-puppet-wechat)
+- Support & Feedback: [https://github.com/wechaty/wechaty-puppet-wechat/issues](https://github.com/wechaty/wechaty-puppet-wechat/issues)
 - [Go Wecahty and WeChat Web Protocol, @dchaofei, Apr 16, 2021](https://wechaty.js.org/2021/04/16/go-wechaty-use-web/)
 
 ## Features

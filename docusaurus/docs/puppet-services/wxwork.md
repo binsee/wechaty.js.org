@@ -21,7 +21,7 @@ WxWork is deprecated and will not receive any updates. Please switch to our late
 
 ## Github repository
 
-- Repo: <https://github.com/juzibot/wxwork-tester>
+- Repo: [https://github.com/juzibot/wxwork-tester](https://github.com/juzibot/wxwork-tester)
 - Provider: [@juzibot](https://github.com/juzibot)
 
 ## How to buy
@@ -48,8 +48,8 @@ Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=t
 
 ## More Info
 
-- Support & Feedback: <https://github.com/juzibot/wxwork-tester/issues>
+- Support & Feedback: [https://github.com/juzibot/wxwork-tester/issues](https://github.com/juzibot/wxwork-tester/issues)
 
 ## Blogs
 
-Check out blogs with the `wxwork` tag at <https://wechaty.js.org/tags.html#wxwork>
+Check out blogs with the `wxwork` tag at [https://wechaty.js.org/tags.html#wxwork](https://wechaty.js.org/tags.html#wxwork)

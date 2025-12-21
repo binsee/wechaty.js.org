@@ -166,7 +166,7 @@ title: Changelog
 - Support room.say`hi ${contact} ${num++}` [\#1899](https://github.com/wechaty/wechaty/issues/1899)
 - Support new event named "message" on Room [\#1897](https://github.com/wechaty/wechaty/issues/1897)
 - Support search new friends by phone number or user name. [\#1892](https://github.com/wechaty/wechaty/issues/1892)
-- {Room,Contact}.qrcode\(\) should return QR Code Value instead of Image [\#1889](https://github.com/wechaty/wechaty/issues/1889)
+- `{Room,Contact}.qrcode()` should return QR Code Value instead of Image [\#1889](https://github.com/wechaty/wechaty/issues/1889)
 - Implmented UrlLink.create\(url\) with Open Graph support [\#1887](https://github.com/wechaty/wechaty/issues/1887)
 - 主动撤回消息 [\#1885](https://github.com/wechaty/wechaty/issues/1885)
 - Implement Label in Wechaty [\#1856](https://github.com/wechaty/wechaty/issues/1856)
@@ -466,7 +466,7 @@ title: Changelog
 - PuppetPadchat: Cannot read property 'user\_name' of undefined [\#1392](https://github.com/wechaty/wechaty/issues/1392)
 - I changed my operating system，but when run dev ,still output restarting [\#1382](https://github.com/wechaty/wechaty/issues/1382)
 - Room-join event show  ERR PuppetWebFirer fireRoomJoin\(\) not found\(yet\) error   \(Bug\) [\#1169](https://github.com/wechaty/wechaty/issues/1169)
-- `Room.findAll\(\)` get error when rooms more than 400 [\#1112](https://github.com/wechaty/wechaty/issues/1112)
+- `Room.findAll()` get error when rooms more than 400 [\#1112](https://github.com/wechaty/wechaty/issues/1112)
 - emit error event when listen the page has been closed [\#1110](https://github.com/wechaty/wechaty/issues/1110)
 
 **Merged pull requests:**
@@ -565,7 +565,7 @@ title: Changelog
 - NPM Switch: `promise-retry` to replace `retry-promise` [\#1235](https://github.com/wechaty/wechaty/issues/1235)
 - Add unit test to puppet accessory [\#1219](https://github.com/wechaty/wechaty/issues/1219)
 - Use browser implementation of Node.js' stream library [\#1201](https://github.com/wechaty/wechaty/issues/1201)
-- feat: Add `for await \(const contact of room\) {}` support by ES6 iterators override [\#1198](https://github.com/wechaty/wechaty/issues/1198)
+- feat: Add `for await (const contact of room) {}` support by ES6 iterators override [\#1198](https://github.com/wechaty/wechaty/issues/1198)
 - BREAKING CHANGE: v0.16 on\('friend`\) arguments changed! [\#1196](https://github.com/wechaty/wechaty/issues/1196)
 - TypeScript Strict Mode: set `noImplicitAny` to `true` [\#1180](https://github.com/wechaty/wechaty/issues/1180)
 - Generic for Return Child Class Type in Abstract Class Implementation [\#1178](https://github.com/wechaty/wechaty/issues/1178)
@@ -612,12 +612,13 @@ title: Changelog
 - BREAKING CHANGE v0.16 Wechaty.self\(\) eprecated, use Wechaty.userSelf\(\)  instead [\#1369](https://github.com/wechaty/wechaty/issues/1369)
 - BREAKING CHANGE v0.16 Contact.personal\(\) and Contact.official\(\)  deprecated, use Contact.type\(\) instead [\#1366](https://github.com/wechaty/wechaty/issues/1366)
 -  no encodedText error in `padchat-decode.ts` [\#1365](https://github.com/wechaty/wechaty/issues/1365)
-- BREAKING CHANGE v0.16  room.add return Promise\<void\> instead of return Promise\<boolean\> [\#1362](https://github.com/wechaty/wechaty/issues/1362)
+- BREAKING CHANGE v0.16 `room.add` return `Promise<void>` instead of return `Promise<boolean>` [\#1362](https://github.com/wechaty/wechaty/issues/1362)
+
 - `media-file-bot` cannot save xlsx file [\#1349](https://github.com/wechaty/wechaty/issues/1349)
 - room-leave-error [\#1335](https://github.com/wechaty/wechaty/issues/1335)
 - room-leave event throw error, cannot get leaver contact [\#1323](https://github.com/wechaty/wechaty/issues/1323)
 - `friendship`  cannot accept friend request automatically [\#1322](https://github.com/wechaty/wechaty/issues/1322)
-- PadchatRpc WXCheckQRCode result: {"message":"WS请求错误","status":-19} [\#1315](https://github.com/wechaty/wechaty/issues/1315)
+- PadchatRpc WXCheckQRCode result: `{"message":"WS请求错误","status":-19}` [\#1315](https://github.com/wechaty/wechaty/issues/1315)
 - m.forward 是 undefined ？ [\#1272](https://github.com/wechaty/wechaty/issues/1272)
 - Navigation Timeout Exceeded: 30000ms exceeded [\#1248](https://github.com/wechaty/wechaty/issues/1248)
 - profile.set can only set 'cookies' instead of other keys [\#1240](https://github.com/wechaty/wechaty/issues/1240)
@@ -662,7 +663,7 @@ title: Changelog
 
 **Implemented enhancements:**
 
-- Rename {test,fixture,example,...} to {tests,fixtures,examples,...} etc. [\#1127](https://github.com/wechaty/wechaty/issues/1127)
+- Rename `{test,fixture,example,...}` to `{tests,fixtures,examples,...}` etc. [\#1127](https://github.com/wechaty/wechaty/issues/1127)
 - Trigger Deploy on Branch /v\d+\.\d+\$/ [\#956](https://github.com/wechaty/wechaty/issues/956)
 - Wechaty Version Numbering [\#905](https://github.com/wechaty/wechaty/issues/905)
 - \[New Puppet\] Puppeteer [\#790](https://github.com/wechaty/wechaty/issues/790)
@@ -738,7 +739,7 @@ title: Changelog
 
 - Promote `rx-queue` to SOLO NPM Module [\#938](https://github.com/wechaty/wechaty/issues/938)
 - Add Wechaty.logonoff\(\) method [\#926](https://github.com/wechaty/wechaty/issues/926)
-- Registe Wechaty Listeners with a try {} catch {} block in order to prevent listener function crash the framework. [\#878](https://github.com/wechaty/wechaty/issues/878)
+- Registe Wechaty Listeners with a `try {} catch {}` block in order to prevent listener function crash the framework. [\#878](https://github.com/wechaty/wechaty/issues/878)
 - Upgrade CircleCI from 1.0 to 2.0 [\#863](https://github.com/wechaty/wechaty/issues/863)
 - Switch Docker Node Image from `alphin` to official `node:7` [\#862](https://github.com/wechaty/wechaty/issues/862)
 - Click Web Wechat `Switch Account` Automatically to get qrcode immediately when bot logout [\#636](https://github.com/wechaty/wechaty/issues/636)
@@ -806,7 +807,7 @@ title: Changelog
 - CI, green keeper and package-lock under npm 5 [\#656](https://github.com/wechaty/wechaty/issues/656)
 - watchDogReset\(\) watchdog reset after 60 seconds \(phantomjs head\) [\#633](https://github.com/wechaty/wechaty/issues/633)
 - \[test\] Unit Test for `mentioned` feature does not run at all [\#623](https://github.com/wechaty/wechaty/issues/623)
-- error TS2345: Argument of type 'string | MemberQueryFilter' is not assignable to parameter of type 'MemberQueryFilter' [\#622](https://github.com/wechaty/wechaty/issues/622)
+- error TS2345: Argument of type `'string | MemberQueryFilter'` is not assignable to parameter of type 'MemberQueryFilter' [\#622](https://github.com/wechaty/wechaty/issues/622)
 - \[Doc\] Add `say\(new MediaMessage\('/tmp/mediafile.gif'\)\)` documentation [\#587](https://github.com/wechaty/wechaty/issues/587)
 - Node Typing BUG: `process.env: any` [\#582](https://github.com/wechaty/wechaty/issues/582)
 - \[ci\] Appveyor error: `should get cookies after loadSession\(\)` [\#579](https://github.com/wechaty/wechaty/issues/579)
@@ -816,7 +817,7 @@ title: Changelog
 - \[docker\] onbuild failed to start when we put `wechaty` as dependency in package.json [\#500](https://github.com/wechaty/wechaty/issues/500)
 - ts-node commond not found  after update docker image [\#492](https://github.com/wechaty/wechaty/issues/492)
 - may be not need .vscode folder, need .editorconfig [\#489](https://github.com/wechaty/wechaty/issues/489)
-- `Room.findAll\(\)` should always return a `ready\(\)`-ed instance [\#477](https://github.com/wechaty/wechaty/issues/477)
+- `Room.findAll()` should always return a `ready()`-ed instance [\#477](https://github.com/wechaty/wechaty/issues/477)
 - MediaMessage\#filename\(\) should not use timestamp as part of the filename [\#465](https://github.com/wechaty/wechaty/issues/465)
 - \[ci\]   × src » message » ready\(\) contact ready for ToNickName [\#445](https://github.com/wechaty/wechaty/issues/445)
 - Build Docker image from zixia/wechaty:onbuild,/bot/node\_modules does not exist. [\#436](https://github.com/wechaty/wechaty/issues/436)
@@ -851,7 +852,7 @@ title: Changelog
 - Room.find\(\) 发送消息提示 say is not a function [\#664](https://github.com/wechaty/wechaty/issues/664)
 - 获取不到avatar [\#645](https://github.com/wechaty/wechaty/issues/645)
 - Get ECONNREFUSED when bot logout and cannot re-login [\#617](https://github.com/wechaty/wechaty/issues/617)
-- Modify Function `Room.create` return type, from `Promise\<Room\>` to `Promise\<Room|null\>`  [\#616](https://github.com/wechaty/wechaty/issues/616)
+- Modify Function `Room.create` return type, from `Promise<Room>` to `Promise<Room|null>`  [\#616](https://github.com/wechaty/wechaty/issues/616)
 - init 后会打开扫码的网页？ [\#601](https://github.com/wechaty/wechaty/issues/601)
 - Error: ENOENT: no such file or directory, stat '/wechaty/dist/.git' [\#581](https://github.com/wechaty/wechaty/issues/581)
 - 在 Windows Server 上初始化的时候，chromedriver 报错。 [\#574](https://github.com/wechaty/wechaty/issues/574)
@@ -893,7 +894,7 @@ title: Changelog
 
 - Promote StateMonitor to a solo NPM module: StateSwitch [\#466](https://github.com/wechaty/wechaty/issues/466)
 - Display detailed error trace when an error is caught in async  [\#360](https://github.com/wechaty/wechaty/issues/360)
-- Room.find\({topic: topic}\) should allowed to return null [\#291](https://github.com/wechaty/wechaty/issues/291)
+- `Room.find({topic: topic})` should allowed to return null [\#291](https://github.com/wechaty/wechaty/issues/291)
 - add `room-bot-leave` event [\#250](https://github.com/wechaty/wechaty/issues/250)
 - Prepare to rename the nick/remark/display for contact/room [\#217](https://github.com/wechaty/wechaty/issues/217)
 - \[new feature\] add function message.mention\(\) [\#216](https://github.com/wechaty/wechaty/issues/216)
@@ -904,8 +905,8 @@ title: Changelog
 **Fixed bugs:**
 
 - Reuse MediaMessage upload fail.Can be allowed MediaMessage reuse？ [\#439](https://github.com/wechaty/wechaty/issues/439)
-- Room.member\(\) cannot find contact correctly [\#365](https://github.com/wechaty/wechaty/issues/365)
-- Room.alias\(\) should return null if we have not set the alias in the room  [\#283](https://github.com/wechaty/wechaty/issues/283)
+- `Room.member()` cannot find contact correctly [\#365](https://github.com/wechaty/wechaty/issues/365)
+- `Room.alias()` should return null if we have not set the alias in the room  [\#283](https://github.com/wechaty/wechaty/issues/283)
 - Cannot read property 'Symbol\(Symbol.iterator\)' of undefined [\#273](https://github.com/wechaty/wechaty/issues/273)
 - add sys message in FriendRequest Event  [\#260](https://github.com/wechaty/wechaty/issues/260)
 - \[docker\] chromium-browser fail to start after upgrading chromium from v53 to v56 [\#235](https://github.com/wechaty/wechaty/issues/235)
@@ -935,7 +936,7 @@ title: Changelog
 - cannot send images / this.puppet.getBaseRequest is not a function [\#338](https://github.com/wechaty/wechaty/issues/338)
 - Some strange log warn [\#336](https://github.com/wechaty/wechaty/issues/336)
 - run bot in server,about 1 hour ago ,the process will be killed [\#330](https://github.com/wechaty/wechaty/issues/330)
-- wechaty 0.7.21 works but 0.7.24 failed with Argument of type 'string | Promise\<boolean\>' is not assignable to parameter of type 'string'. [\#282](https://github.com/wechaty/wechaty/issues/282)
+- wechaty 0.7.21 works but 0.7.24 failed with Argument of type `'string | Promise<boolean>'` is not assignable to parameter of type 'string'. [\#282](https://github.com/wechaty/wechaty/issues/282)
 - how i can save avatar without await keywords? [\#278](https://github.com/wechaty/wechaty/issues/278)
 - 如何获取MsgType为APP类型的信息,解析不成xml [\#262](https://github.com/wechaty/wechaty/issues/262)
 - \[linting\] fix needed for new tslint rule: trailing-comma [\#251](https://github.com/wechaty/wechaty/issues/251)
@@ -992,7 +993,7 @@ title: Changelog
 **Implemented enhancements:**
 
 - 请问可以获取联系人或群成员的性别、所属地域、头像吗？ [\#121](https://github.com/wechaty/wechaty/issues/121)
-- Function Room.add\(\) should return Promise\<boolean\> [\#119](https://github.com/wechaty/wechaty/issues/119)
+- Function `Room.add()` should return `Promise<boolean>` [\#119](https://github.com/wechaty/wechaty/issues/119)
 - Could you add api to find contact by remark [\#117](https://github.com/wechaty/wechaty/issues/117)
 - Need to support AppMsgType: 100001 with MsgType: 49 [\#114](https://github.com/wechaty/wechaty/issues/114)
 - get room owner on event 'room-join','room-topic' [\#105](https://github.com/wechaty/wechaty/pull/105) ([JasLin](https://github.com/JasLin))
@@ -1004,9 +1005,9 @@ title: Changelog
 - remark\(null\) doesn't work [\#130](https://github.com/wechaty/wechaty/issues/130)
 - Cannot identify \['\] in room topic [\#116](https://github.com/wechaty/wechaty/issues/116)
 - room.member\(\) cannot get member when bot set remark for friend [\#104](https://github.com/wechaty/wechaty/issues/104)
-- contactFind\(function \(c\) { return /.\*/.test\(c\) }\) rejected: javascript error: Unexpected token [\#98](https://github.com/wechaty/wechaty/issues/98)
+- `contactFind(function (c) { return /.*/.test(c) })` rejected: javascript error: Unexpected token [\#98](https://github.com/wechaty/wechaty/issues/98)
 - Error: Chrome failed to start: was killed [\#95](https://github.com/wechaty/wechaty/issues/95)
-- Function `message.to\(\): Contact|Room` bug [\#88](https://github.com/wechaty/wechaty/issues/88)
+- Function `message.to(): Contact|Room` bug [\#88](https://github.com/wechaty/wechaty/issues/88)
 - Session Cookies not loaded correctly? [\#31](https://github.com/wechaty/wechaty/issues/31)
 
 **Closed issues:**
@@ -1015,7 +1016,7 @@ title: Changelog
 - node dist/example/ding-dong-bot.js example运行异常 [\#159](https://github.com/wechaty/wechaty/issues/159)
 - deploying to server problems \(running headless\) [\#154](https://github.com/wechaty/wechaty/issues/154)
 - wechaty mybot.js start error [\#126](https://github.com/wechaty/wechaty/issues/126)
-- Room-join' para  inviteeList\[\] cannot always work well when contain emoji [\#125](https://github.com/wechaty/wechaty/issues/125)
+- Room-join' para  `inviteeList[]` cannot always work well when contain emoji [\#125](https://github.com/wechaty/wechaty/issues/125)
 - \[help\] install wechaty and its types [\#124](https://github.com/wechaty/wechaty/issues/124)
 - ERR Message ready\(\) exception: Error: Contact.load\(\): id not found [\#123](https://github.com/wechaty/wechaty/issues/123)
 - enhance request.hello function [\#120](https://github.com/wechaty/wechaty/issues/120)
@@ -1088,9 +1089,9 @@ title: Changelog
 - test/fix Watchdog with browser dead & timeout conditions [\#47](https://github.com/wechaty/wechaty/issues/47)
 - use StateMonitor to record&check wechaty/puppet/bridge/browser state change [\#46](https://github.com/wechaty/wechaty/issues/46)
 - \[New Feature\] send message by branding new method: say\(\) [\#41](https://github.com/wechaty/wechaty/issues/41)
-- \[New Feature\] Contact.{tag,star,remark,find,findAll} [\#34](https://github.com/wechaty/wechaty/issues/34)
+- \[New Feature\] `Contact.{tag,star,remark,find,findAll}` [\#34](https://github.com/wechaty/wechaty/issues/34)
 - \[New Feature\] FriendRequest class and event [\#33](https://github.com/wechaty/wechaty/issues/33)
-- \[New Feature\] Room.{create,addMember,delMember,quit,modTopic} support [\#32](https://github.com/wechaty/wechaty/issues/32)
+- \[New Feature\] `Room.{create,addMember,delMember,quit,modTopic}` support [\#32](https://github.com/wechaty/wechaty/issues/32)
 
 **Fixed bugs:**
 

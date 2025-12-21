@@ -6,7 +6,7 @@ sidebar_label: Paimon
 [![Wechaty Puppet Service Paimon](https://img.shields.io/badge/Service-Paimon-blue)](paimon.md)
 
 - Provider: [zpaimon](https://github.com/zpaimon)
-- Support & Feedback: <https://github.com/wechaty/puppet-services/issues>
+- Support & Feedback: [https://github.com/wechaty/puppet-services/issues](https://github.com/wechaty/puppet-services/issues)
 - Term of Service (ToS): To-be-added
 - Privacy Policy: To-be-added
 - Service Level Agreement (SLA): To-be-added
@@ -115,4 +115,4 @@ NO token gateway required.（不需要Token网关直接使用）
 
 ## Blogs
 
-Read blogs with the `paimon` tag at <https://wechaty.js.org/tags.html#paimon>
+Read blogs with the `paimon` tag at [https://wechaty.js.org/tags.html#paimon](https://wechaty.js.org/tags.html#paimon)

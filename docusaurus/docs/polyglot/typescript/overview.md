@@ -16,7 +16,7 @@ TypeScript is the language that Wechaty ecosystem built on.
 
 ## Quick Started
 
-Template Repo: <https://github.com/wechaty/wechaty-getting-started>
+Template Repo: [https://github.com/wechaty/wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started)
 
 ### 1. Gitpod ❤️  Wechaty
 
@@ -62,7 +62,7 @@ Wechaty.instance()
 
 ## Getting Started
 
-Getting Started Template Repo <https://github.com/wechaty/wechaty-getting-started>
+Getting Started Template Repo [https://github.com/wechaty/wechaty-getting-started](https://github.com/wechaty/wechaty-getting-started)
 
 ## Maintainers
 
@@ -79,7 +79,7 @@ Getting Started Template Repo <https://github.com/wechaty/wechaty-getting-starte
 
 ## Docs
 
-- API Reference: <https://wechaty.github.io/wechaty/>
+- API Reference: [https://wechaty.github.io/wechaty/](https://wechaty.github.io/wechaty/)
 - [Wechaty How-to Guides](../../howto/overview.mdx)
 
 ## Badge

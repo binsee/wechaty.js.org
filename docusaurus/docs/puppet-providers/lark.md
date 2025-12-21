@@ -14,8 +14,8 @@ import TabItem from '@theme/TabItem'
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-lark.svg)](https://badge.fury.io/js/wechaty-puppet-lark)
 [![npm (tag)](https://img.shields.io/npm/v/wechaty-puppet-lark/next.svg)](https://www.npmjs.com/package/wechaty-puppet-lark?activeTab=versions)
 
-- Repo: <https://github.com/wechaty/wechaty-puppet-lark>
-- Support & Feedback: <https://github.com/wechaty/wechaty-puppet-lark/issues>
+- Repo: [https://github.com/wechaty/wechaty-puppet-lark](https://github.com/wechaty/wechaty-puppet-lark)
+- Support & Feedback: [https://github.com/wechaty/wechaty-puppet-lark/issues](https://github.com/wechaty/wechaty-puppet-lark/issues)
 
 ## Features
 

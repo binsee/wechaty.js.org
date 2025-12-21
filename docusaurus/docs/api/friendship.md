@@ -18,7 +18,7 @@ The Friendship class allows you to do the following functionalities.
 
 | Instance Methods | Return Type      |
 |------------------|------------------|
-| accept()         | `Promise (void)` |
+| accept()         | Promise (void) |
 | hello()          | `string`         |
 | contact()        | `contact`        |
 | type()           | `Frienshiptype`  |
@@ -27,9 +27,9 @@ The Friendship class allows you to do the following functionalities.
 
 | Static Methods | Return Type      |
 |----------------|------------------|
-| add()          | `Promise (void)` |
+| add()          | Promise (void) |
 
-### friendship.accept\(\) ⇒ `Promise <void>`
+### friendship.accept\(\) ⇒ `Promise<void>`
 
 The method accepts friend request.Check the example below for implementation
 
@@ -37,7 +37,7 @@ The method accepts friend request.Check the example below for implementation
 
 ```javascript
 const bot = new Wechaty()
-bot.on('friendship', async friendship => {
+bot.on('friendship', async friendship =\> {
   try {
     console.log(`received friend event.`)
     switch (friendship.type()) {
@@ -102,7 +102,7 @@ bot.on('friendship', friendship => {
 
 The method returns the friendship type.Check the below example for implementation.
 
-> Tips: FriendshipType is enum here. &lt;/br&gt;
+> Tips: FriendshipType is enum here. &lt;/br>
 >
 > * FriendshipType.Unknown
 > * FriendshipType.Confirm
@@ -125,7 +125,7 @@ bot.on('friendship', async friendship => {
 .start()
 ```
 
-### Friendship.search\(phone\) ⇒ `Promise <Contact>`
+### Friendship.search\(phone\) ⇒ `Promise<Contact>`
 
 The method search contact by phone number and get a `contact`. The best practice is to send friend request once per minute. Remember not to do this too frequently, or your account may be blocked.
 
@@ -142,7 +142,7 @@ const searchContact = await bot.Friendship.search({
 })
 ```
 
-### Friendship.add\(contact, options\) ⇒ `Promise <void>`
+### Friendship.add\(contact, options\) ⇒ `Promise<void>`
 
 The method sends a Friend Request to a `contact` with message `hello`.The best practice is to send friend request once per minute. Remember not to do this too frequently, or your account may be blocked.
 

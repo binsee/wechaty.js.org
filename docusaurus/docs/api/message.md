@@ -16,24 +16,24 @@ All wechat messages will be encapsulated as a `Message`.
 | to\(\)                         | `Contact` or `null` |
 | room\(\)                       | `Room` or `null`    |
 | text\(\)                       | `string`            |
-| say\(text Or Contact Or File\) | `Promise`           |
+| say\(text Or Contact Or File\) | Promise           |
 | type\(\)                       | `MessageType`       |
 | self\(\)                       | `boolean`           |
-| mention\(\)                    | `Promise`           |
-| mentionSelf\(\)                | `Promise`           |
-| forward\(to\)                  | `Promise`           |
+| mention\(\)                    | Promise           |
+| mentionSelf\(\)                | Promise           |
+| forward\(to\)                  | Promise           |
 | date\(\)                       | `Date`              |
 | age\(\)                        | `Number`            |
-| toFileBox\(\)                  | `Promise`           |
-| toContact\(\)                  | `Promise`           |
-| toUrlLink\(\)                  | `Promise`           |
+| toFileBox\(\)                  | Promise           |
+| toContact\(\)                  | Promise           |
+| toUrlLink\(\)                  | Promise           |
 
 ### Static Method
 
 | Static Methods | Return type |
 |----------------|-------------|
-| find\(\)       | `Promise`   |
-| findAll\(\)    | `Promise`   |
+| find\(\)       | Promise   |
+| findAll\(\)    | Promise   |
 
 ## Instance Methods
 
@@ -60,7 +60,7 @@ bot
 .start()
 ```
 
-### message.to\(\) ⇒ `Contact` \| `null`
+### message.to\(\) ⇒ `Contact` | `null`
 
 The method gets the destination of the message Message.to\(\) will return `null` if a message is in a room, use Message.room\(\) to get the room.The method is also  an instance method of class `Message`.Here is an example below:
 
@@ -83,7 +83,7 @@ bot
 .start()
 ```
 
-### message.room\(\) ⇒ `Room` \| `null`
+### message.room\(\) ⇒ `Room` | `null`
 
 By using the `message.room` you get the room from the message.If that particular message is not in a room, then will return `null`.
 
@@ -129,7 +129,7 @@ bot
 .start()
 ```
 
-### message.toRecalled\(\) ⇒ `Promise <Message | null>`
+### message.toRecalled\(\) ⇒ `Promise<Message | null>`
 
 By using `message.toRecalled`, you will get the text content of the recalled message.
 Here is an example:
@@ -139,7 +139,7 @@ Here is an example:
 ```javascript
 const bot = new Wechaty()
 bot
-.on('message', async message => {
+.on('message', async message =\> {
   if (message.type() === bot.Message.Type.Recalled) {
     const recalledMessage = await message.toRecalled()
     console.log(`Message: ${recalledMessage} has been recalled.`)
@@ -148,15 +148,15 @@ bot
 .start()
 ```
 
-### message.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise <void>`
+### message.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise<void>`
 
 By using `message.say` you can reply a Text, Contact Card, Media File or Link message to the sender.The method takes in 5 types of parameters,more details is given below :
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| text Or Contact Or File Or UrlLink Or MiniProgram | `string` \| `Contact` \| `FileBox` \| `UrlLink` \| `MiniProgram` | send text, Contact, UrlLink, MiniProgram or file to bot.   You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
+| text Or Contact Or File Or UrlLink Or MiniProgram | `string` | `Contact` | `FileBox` | `UrlLink` | `MiniProgram` | send text, Contact, UrlLink, MiniProgram or file to bot.   You can use [FileBox](https://www.npmjs.com/package/file-box) to send file |
 
-> Tips: This function depends on the Puppet Implementation.
+\> Tips: This function depends on the Puppet Implementation.
  **See 🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 **See🏻**: [Examples/ding-dong-bot](https://github.com/wechaty/wechaty/blob/1523c5e02be46ebe2cc172a744b2fbe53351540e/examples/ding-dong-bot.ts)
@@ -266,9 +266,9 @@ if (message.self()) {
 }
 ```
 
-### message.mention\(\) ⇒ `Promise <Contact []>`
+### message.mention\(\) ⇒ `Promise<Contact []>`
 
-The method gets you the message mentioned contactList and returns `Promise <Contact []>` - > message mentioned contactList.
+The method gets you the message mentioned contactList and returns `Promise<Contact []>` - \> message mentioned contactList.
 
 |  | Web | Mac PC Client | iOS Mobile | android Mobile |
 | :--- | :---: | :---: | :---: | :---: |
@@ -284,7 +284,7 @@ const contactList = await message.mention()
 console.log(contactList)
 ```
 
-### message.mentionSelf\(\) ⇒ `Promise <boolean>`
+### message.mentionSelf\(\) ⇒ `Promise<boolean>`
 
 The method checks if a message is a self mention.It returns `true` for self mention messages.Here is an example:
 
@@ -296,20 +296,20 @@ if (await message.mentionSelf()) {
 }
 ```
 
-### message.forward\(to\) ⇒ `Promise <void>`
+### message.forward\(to\) ⇒ `Promise<void>`
 
 By using this method you can forward the received message. This action doesn't trigger the on-message events.
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| to (Recipient) | `Sayable` \| `Array` | Room or Contact The recipient of the message, the room, or the contact |
+| to (Recipient) | `Sayable` | `Array` | Room or Contact The recipient of the message, the room, or the contact |
 
 ### Example
 
 ```javascript
 const bot = new Wechaty()
 bot
-.on('message', async message => {
+.on('message', async message =\> {
   const room = await bot.Room.find({topic: 'wechaty'})
   if (room) {
     await message.forward(room)
@@ -327,29 +327,29 @@ The method returns the message sent date.
 
 The method returns the age of the  message  in seconds.For example, the message is sent at time `8:43:01`, and when we received it in Wechaty, the time is `8:43:15`, then the age\(\) will return `8:43:15 - 8:43:01 = 14 (seconds)`.
 
-### message.toFileBox\(\) ⇒ `Promise <FileBox>`
+### message.toFileBox\(\) ⇒ `Promise<FileBox>`
 
 This method extracts the Media file from the Message, and puts it into the FileBox.
 
-> Tips: This function is depending on the Puppet Implementation, **see🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+\> Tips: This function is depending on the Puppet Implementation, **see🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
-### message.toContact\(\) ⇒ `Promise <Contact>`
+### message.toContact\(\) ⇒ `Promise<Contact>`
 
 The method gets share card of the Message Extract  and the contact card from the Message, and encapsulates it into Contact class.
 
-> Tips: This function is depending on the Puppet Implementation, **see 🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+\> Tips: This function is depending on the Puppet Implementation, **see 🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
-### message.toUrlLink\(\) ⇒ `Promise <UrlLink>`
+### message.toUrlLink\(\) ⇒ `Promise<UrlLink>`
 
 The method extracts the Url Link from the Message, and encapsulate it into UrlLink class.
 Tips: This function is depending on the Puppet Implementation, **see 🏻** [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 ## Static Methods
 
-### Message.find\(\) ⇒ `Promise <Message | null>`
+### Message.find\(\) ⇒ `Promise<Message | null>`
 
 By using `message.find` you can find the messages in cache.
 
-### Message.findAll\(\) ⇒ `Promise <Message []>`
+### Message.findAll\(\) ⇒ `Promise<Message []>`
 
 By using `message.findAll`  you can find the messages in cache.

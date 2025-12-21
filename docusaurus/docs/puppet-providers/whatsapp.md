@@ -18,9 +18,9 @@ The WhatsApp Wechaty Puppet Provider is now available in alpha stage, to allow d
 
 As a developer, you can use wechaty-puppet-whatsapp to build your own WhatsApp chatbot with a few lines of code, which can send and receive WhatsApp messages with wechaty API.
 
-- Repo: <https://github.com/wechaty/wechaty-puppet-whatsapp>
-- Support & Feedback: <https://github.com/wechaty/wechaty-puppet-whatsapp/issues>
-- npm package: <https://npmjs.com/package/wechaty-puppet-whatsapp>
+- Repo: [https://github.com/wechaty/wechaty-puppet-whatsapp](https://github.com/wechaty/wechaty-puppet-whatsapp)
+- Support & Feedback: [https://github.com/wechaty/wechaty-puppet-whatsapp/issues](https://github.com/wechaty/wechaty-puppet-whatsapp/issues)
+- npm package: [https://npmjs.com/package/wechaty-puppet-whatsapp](https://npmjs.com/package/wechaty-puppet-whatsapp)
 - Built on top of [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js), which is a WhatsApp client library for NodeJS.
 - Creator of [whatsapp-web.js](https://github.com/pedroslopez/whatsapp-web.js) is [@pedroslopez](https://github.com/pedroslopez).
 
@@ -88,14 +88,14 @@ The steps are similar for all other bots as well.
 
 You can follow up the steps mentioned below:
 
-<ol><li> Initialize the project by creating a new folder `my-bot`.</li>
+1. Initialize the project by creating a new folder `my-bot`.
 
 ```bash
 mkdir my-bot
 cd my-bot
 ```
 
-<li> Install the dependencies using the following commands:</li>
+2. Install the dependencies using the following commands:
 
 ```bash
 npm install wechaty
@@ -128,7 +128,7 @@ const bot = new Wechaty()
  */
 ```
 
-<li> After you are done with the file, you can run the bot using the following commands:</li></ol>
+3. After you are done with the file, you can run the bot using the following commands:
 
 ```bash
 export WECHATY_LOG=verbose
@@ -172,4 +172,5 @@ wechaty-puppet-whatsapp is an open-source project. If you’re interested in con
 ## Maintainers
 
 - [@univerone](https://wechaty.js.org/contributors/univerone)
-- [@huan](https://github.com/huan) [Huan LI](http://linkedin.com/in/zixia) <zixia@zixia.net>
+- [@huan](https://github.com/huan) [Huan LI](http://linkedin.com/in/zixia) [zixia@zixia.net](mailto:zixia@zixia.net)
+

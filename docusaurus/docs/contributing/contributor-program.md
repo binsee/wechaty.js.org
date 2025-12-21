@@ -68,7 +68,7 @@ See: [Provide a Community Development Server for Wechaty Contributors wechaty/PM
 
 ### How to publish blogs
 
-Send a Pull Request to our website repo at <https://github.com/wechaty/wechaty.js.org>
+Send a Pull Request to our website repo at [https://github.com/wechaty/wechaty.js.org](https://github.com/wechaty/wechaty.js.org)
 
 ### How to share your open source project
 
@@ -86,4 +86,4 @@ Then add it to the list at [Project using Wechaty](http://wechaty.js.org/docs/ca
 
 ### Juzi.BOT
 
-If you are looking for the contributor program from Juzi.BOT, please go to visit the great introduction documentation at <https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/>
+If you are looking for the contributor program from Juzi.BOT, please go to visit the great introduction documentation at [https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/](https://github.com/juzibot/Welcome/wiki/Everything-about-Wechaty/)

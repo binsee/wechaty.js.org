@@ -35,18 +35,18 @@ The `Room` ia a global class.All wechat rooms\(groups\) will be encapsulated as 
 | has(contact)                                        | `Promise`         |
 | memberAll(query)                                    | `Promise`         |
 | member(queryArg)                                    | `Promise`         |
-| owner()                                             | `Contact or null` |
+| owner()                                             | `Contact` or `null` |
 | avatar()                                            | `Promise`         |
 
 ### Static Methods
 
 | Static Methods            | Return Type              |
 |---------------------------|--------------------------|
-| create(contactList,topic) | `Promise <Room>`         |
+| create(contactList,topic) | `Promise<Room>`         |
 | findAll(query)            | `Promise`                |
-| find(query)               | `Promise <Room> or null` |
+| find(query)               | `Promise<Room>` or `null` |
 
-### room.sync\(\) ⇒ `Promise <void>`
+### room.sync\(\) ⇒ `Promise<void>`
 
 The method forces reload of data for Room and Sync data from lowlevel API again.
 
@@ -56,11 +56,11 @@ The method forces reload of data for Room and Sync data from lowlevel API again.
 await room.sync()
 ```
 
-### room.say\(text Or Contact Or File Or UrlLink Or MiniProgram, ...mentionList\) ⇒ `Promise <void>`
+### room.say\(text Or Contact Or File Or UrlLink Or MiniProgram, ...mentionList\) ⇒ `Promise<void>`
 
 The method sends message inside Room, if set mentionList, wechaty will mention the contact list as well.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+\> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
@@ -193,11 +193,11 @@ if (room) {
 }
 ```
 
-### room.add\(contact\) ⇒ `Promise <void>`
+### room.add\(contact\) ⇒ `Promise<void>`
 
 The method adds contact in a room.Check the below example for implementation.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+\> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 >
 > see [Web version of WeChat closed group interface](https://github.com/wechaty/wechaty/issues/1441)
 
@@ -222,11 +222,11 @@ if (room) {
 }
 ```
 
-### room.del\(contact\) ⇒ `Promise <void>`
+### room.del\(contact\) ⇒ `Promise<void>`
 
 The method deletes a contact from the room .It works only when the bot is the owner of the room.Check the below example for implementation.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+\> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 >
 > see [Web version of WeChat closed group interface](https://github.com/wechaty/wechaty/issues/1441)
 
@@ -251,11 +251,11 @@ if (room) {
 }
 ```
 
-### room.quit\(\) ⇒ `Promise <void>`
+### room.quit\(\) ⇒ `Promise<void>`
 
 This method helps the bot quit the room itself.Check the below example for implementation.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+\> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 #### Example
 
@@ -263,7 +263,7 @@ This method helps the bot quit the room itself.Check the below example for imple
 await room.quit()
 ```
 
-### room.topic\(\[newTopic\]\) ⇒ `Promise <void | string>`
+### room.topic\(\[newTopic\]\) ⇒ `Promise<void | string>`
 
 The method sets or gets topic from the room.Check the below example for implementation.
 
@@ -276,7 +276,7 @@ The method sets or gets topic from the room.Check the below example for implemen
 ```javascript
 const bot = new Wechaty()
 bot
-.on('message', async m => {
+.on('message', async m =\> {
   const room = m.room()
   if (room) {
     const topic = await room.topic()
@@ -302,11 +302,11 @@ bot
 .start()
 ```
 
-### room.announce\(\[text\]\) ⇒ `Promise <void | string>`
+### room.announce\(\[text\]\) ⇒ `Promise<void | string>`
 
 The methos sets or gets announcement from the room.Check the below example for implementation.
 
-> Tips: It only works when bot is the owner of the room.
+\> Tips: It only works when bot is the owner of the room.
 >
 > This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
@@ -337,15 +337,15 @@ await room.announce('change announce to wechaty!')
 console.log(`room announce change from ${oldAnnounce} to ${room.announce()}`)
 ```
 
-### room.qrcode\(\) ⇒ `Promise <string>`
+### room.qrcode\(\) ⇒ `Promise<string>`
 
 This method get QR Code of the Room from the room, which can be scanned to join the room.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+\> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
-### room.alias\(contact\) ⇒ `Promise <string | null>`
+### room.alias\(contact\) ⇒ `Promise<string | null>`
 
-The method gets the contact's roomAlias in the room.It returns  `Promise <string | null>` - - If a contact has an alias in room,otherwise return `null`.
+The method gets the contact's roomAlias in the room.It returns  `Promise<string | null>` - - If a contact has an alias in room,otherwise return `null`.
 
 | Param | Type |
 | :--- | :--- |
@@ -356,7 +356,7 @@ The method gets the contact's roomAlias in the room.It returns  `Promise <string
 ```javascript
 const bot = new Wechaty()
 bot
-.on('message', async m => {
+.on('message', async m =\> {
   const room = m.room()
   const contact = m.from()
   if (room) {
@@ -367,7 +367,7 @@ bot
 .start()
 ```
 
-### room.has\(contact\) ⇒ `Promise <boolean>`
+### room.has\(contact\) ⇒ `Promise<boolean>`
 
 Check if the room has member `contact`, the return is a Promise and must be `await`-ed.The method returns `true` if has contact, else return `false`.
 
@@ -392,7 +392,7 @@ if (contact && room) {
 }
 ```
 
-### room.memberAll\(\[query\]\) ⇒ `Promise <Contact []>`
+### room.memberAll\(\[query\]\) ⇒ `Promise<Contact []>`
 
 Find all contacts in a room
 
@@ -406,7 +406,7 @@ Find all contacts in a room
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| \[query\] | [`RoomMemberQueryFilter`](room.md#RoomMemberQueryFilter) \| `string` | Optional parameter, When use memberAll\(name:string\), return all matched members, including name, roomAlias, contactAlias |
+| \[query\] | [`RoomMemberQueryFilter`](room.md#RoomMemberQueryFilter) | `string` | Optional parameter, When use memberAll\(name:string\), return all matched members, including name, roomAlias, contactAlias |
 
 #### Example
 
@@ -418,13 +418,13 @@ const memberContactList: Conatct[] = await room.memberAll(`abc`)
 console.log(`contact list with all name, room alias, alias are abc:`, memberContactList)
 ```
 
-### room.member\(queryArg\) ⇒ `Promise <Contact | null>`
+### room.member\(queryArg\) ⇒ `Promise<Contact | null>`
 
 This method finds all contacts in a room, if it gets many, then first one is returned.
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
-| queryArg | [`RoomMemberQueryFilter`](room.md#RoomMemberQueryFilter) \| `string` | When use member\(name:string\), return all matched members, including name, roomAlias, contactAlias |
+| queryArg | [`RoomMemberQueryFilter`](room.md#RoomMemberQueryFilter) | `string` | When use member\(name:string\), return all matched members, including name, roomAlias, contactAlias |
 
 #### Example \(Find member by name\)
 
@@ -460,11 +460,11 @@ if (room) {
 }
 ```
 
-### room.owner\(\) ⇒ `Contact` \| `null`
+### room.owner\(\) ⇒ `Contact` | `null`
 
 The method gets the room's owner from the room.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+\> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 #### Example
 
@@ -472,11 +472,11 @@ The method gets the room's owner from the room.
 const owner = room.owner()
 ```
 
-### room.avatar\(\) ⇒ `Promise <FileBox>`
+### room.avatar\(\) ⇒ `Promise<FileBox>`
 
 The method gets room's avatar.Check the below example for implementation.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+\> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
 
 #### Example
 
@@ -486,7 +486,7 @@ const owner = room.avatar()
 
 ## Static Methods
 
-### Room.create\(contactList, \[topic\]\) ⇒ [`Promise <Room>`](room.md#Room)
+### Room.create\(contactList, \[topic\]\) ⇒ [`Promise<Room>`](room.md#Room)
 
 The method creates a new room.Check the below example for implementation.
 
@@ -508,13 +508,14 @@ await room.topic('ding - created')
 await room.say('ding - created')
 ```
 
-### Room.findAll\(\[query\]\) ⇒ `Promise <Room []>`
+### Room.findAll(query) ⇒ `Promise`
 
-The method finds the  room by by filter: {topic: string \| RegExp},  and returns all the matched rooms.Check the below example for implementation.
+
+The method finds the  room by by filter: `{topic: string | RegExp}`,  and returns all the matched rooms.Check the below example for implementation.
 
 | Param | Type |
 | :--- | :--- |
-| \[query\] | [`RoomQueryFilter`](room.md#RoomQueryFilter) |
+| query | [`RoomQueryFilter`](room.md#RoomQueryFilter) |
 
 #### Example
 
@@ -526,9 +527,9 @@ const roomList = await bot.Room.findAll()                    // get the room lis
 const roomList = await bot.Room.findAll({topic: 'wechaty'})  // find all of the rooms with name 'wechaty'
 ```
 
-### Room.find\(query\) ⇒ `Promise <Room>`
+### Room.find\(query\) ⇒ `Promise<Room>`
 
-Try to find a room by filter: {topic: string \| RegExp}. The method returns `Promise <Room>` String - If it finds the room,or return `null`.If the method gets get many,it returns the first one.
+Try to find a room by filter: `{topic: string | RegExp}`. The method returns `Promise<Room>` String - If it finds the room,or return `null`.If the method gets get many,it returns the first one.
 
 | Param | Type |
 | :--- | :--- |
@@ -550,7 +551,7 @@ There are many Typedefs supported by `Room` and details about each of the typede
 
 ## RoomQueryFilter
 
-This typedef is used as a filter to find the room: {topic: string \| RegExp}.
+This typedef is used as a filter to find the room: `{topic: string | RegExp}`.
 
 ### Properties
 
@@ -578,9 +579,9 @@ This typedef is a Room Class Event Function that has the following properties as
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| room-join | `function` | \(this: Room, inviteeList: Contact\[\] , inviter: Contact\)  =&gt; void |
-| room-topic | `function` | \(this: Room, topic: string, oldTopic: string, changer: Contact\) =&gt; void |
-| room-leave | `function` | \(this: Room, leaver: Contact\) =&gt; void |
+| room-join | `function` | \(this: Room, inviteeList: Contact\[\] , inviter: Contact\)  => void |
+| room-topic | `function` | \(this: Room, topic: string, oldTopic: string, changer: Contact\) => void |
+| room-leave | `function` | \(this: Room, leaver: Contact\) => void |
 
 ## RoomMemberQueryFilter
 

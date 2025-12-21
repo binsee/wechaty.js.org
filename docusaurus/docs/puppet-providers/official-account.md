@@ -10,8 +10,8 @@ sidebar_label: Official Account
 [![NPM Version](https://badge.fury.io/js/wechaty-puppet-official-account.svg)](https://badge.fury.io/js/wechaty-puppet-official-account)
 [![npm (tag)](https://img.shields.io/npm/v/wechaty-puppet-official-account/next.svg)](https://www.npmjs.com/package/wechaty-puppet-official-account?activeTab=versions)
 
-- Repo: <https://github.com/wechaty/wechaty-puppet-official-account>
-- Support & Feedback: <https://github.com/wechaty/wechaty-puppet-official-account/issues>
+- Repo: [https://github.com/wechaty/wechaty-puppet-official-account](https://github.com/wechaty/wechaty-puppet-official-account)
+- Support & Feedback: [https://github.com/wechaty/wechaty-puppet-official-account/issues](https://github.com/wechaty/wechaty-puppet-official-account/issues)
 
 ## Features
 

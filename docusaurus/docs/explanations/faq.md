@@ -69,4 +69,4 @@ No, wechaty use wechaty itself API for wechat4u. They are totally 2 different pr
 
 ### How To Ask Questions The Smart Way
 
-<https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md>
+[https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md)

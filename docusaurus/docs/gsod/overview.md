@@ -10,7 +10,7 @@ Google Season of Docs (GSoD) bring open source and technical writer communities 
 
 > Fostering open source collaboration with technical writers
 
-- <https://developers.google.com/season-of-docs>
+- [https://developers.google.com/season-of-docs](https://developers.google.com/season-of-docs)
 
 ## Years
 

@@ -8,7 +8,7 @@ title: 'Writing tests'
 
 ![chatie puppet](https://wechaty.github.io/wechaty-puppet-mock/images/mock.png)
 
-> Picture Credit: <https://softwareautotools.com/2017/03/01/mocking-explained-in-python/>
+> Picture Credit: [https://softwareautotools.com/2017/03/01/mocking-explained-in-python/](https://softwareautotools.com/2017/03/01/mocking-explained-in-python/)
 
 [![Powered by Wechaty](https://img.shields.io/badge/Powered%20By-Wechaty-brightgreen.svg)](https://github.com/wechaty/wechaty)
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-blue.svg)](https://www.typescriptlang.org/)

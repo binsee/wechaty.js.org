@@ -24,7 +24,7 @@ sidebar_label: '点亮计划: Index'
 
 学生可自主选择感兴趣的项目进行申请，并在中选后获得该软件资深维护者（社区导师）亲自指导的机会。根据项目的难易程度和完成情况，参与者还将获取 开源软件供应链点亮计划-暑期2021 活动奖杯和奖金。
 
-更多相信信息请访问官网：<https://summer.iscas.ac.cn/help/>
+更多相信信息请访问官网：[https://summer.iscas.ac.cn/help/](https://summer.iscas.ac.cn/help/)
 
 ## 活动规划
 

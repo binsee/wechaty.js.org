@@ -47,7 +47,7 @@ node bot.js
 [![Docker Pulls](https://img.shields.io/docker/pulls/wechaty/wechaty.svg?maxAge=2592000)](https://hub.docker.com/r/wechaty/wechaty/)
 [![Docker Layers](https://images.microbadger.com/badges/image/wechaty/wechaty.svg)](https://microbadger.com/#/images/wechaty/wechaty)
 
-- Wechaty Starter Repository for Docker - <https://github.com/wechaty/docker-wechaty-getting-started>
+- Wechaty Starter Repository for Docker - [https://github.com/wechaty/docker-wechaty-getting-started](https://github.com/wechaty/docker-wechaty-getting-started)
 
 > Wechaty Docker supports both JavaScript and TypeScript. To use TypeScript just write in TypeScript and save with extension name `.ts`, no need to compile because we use `ts-node` to run it.
 

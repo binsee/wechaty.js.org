@@ -11,8 +11,8 @@ sidebar_label: PadLocal
 [![npm (tag)](https://img.shields.io/npm/v/wechaty-puppet-padlocal/next.svg)](https://www.npmjs.com/package/wechaty-puppet-padlocal?activeTab=versions)
 [![Powered by padlocal-client-ts](https://img.shields.io/badge/Powered%20By-padlocal--client--ts-brightgreen)](https://github.com/padlocal/padlocal-client-ts)
 
-- Repo: <https://github.com/padlocal/wechaty-puppet-padlocal>
-- Support & Feedback: <https://github.com/padlocal/wechaty-puppet-padlocal/issues>
+- Repo: [https://github.com/padlocal/wechaty-puppet-padlocal](https://github.com/padlocal/wechaty-puppet-padlocal)
+- Support & Feedback: [https://github.com/padlocal/wechaty-puppet-padlocal/issues](https://github.com/padlocal/wechaty-puppet-padlocal/issues)
 
 ## Known Issues
 
@@ -30,7 +30,8 @@ PadLocal is a full-featured Wechaty Puppet Provider.
 
 Function | 功能 | padlocal
 ---|---|---
-**Message**|**<消息>**
+**Message**|**&lt;消息&gt;**
+
 Send and receive text|收发文本|✅
 Send and receive personal business cards|收发个人名片|✅
 Send and receive graphic links|收发图文链接|✅
@@ -51,7 +52,7 @@ Forward the video|转发视频|✅
 Forward file|转发文件|✅
 Forward GIF|转发动图|❌
 Forwarding applet|转发小程序|✅
-**Group**|**<群组>**|
+**Group**|**&lt;群组&gt;**|
 Create group chat|创建群聊|✅
 Set group announcement|设置群公告|✅
 Get group announcement|获取群公告|✅
@@ -67,14 +68,14 @@ Group name change event|群名称变更事件|✅
 Group list|群列表|✅
 Group member list|群成员列表|✅
 Group details|群详情|✅
-**Contact**|**<联系人>**|
+**Contact**|**&lt;联系人&gt;**|
 Modification notes|修改备注|✅
 Add friends|添加好友|✅
 Pass friends automatically|自动通过好友|✅
 Add friends|添加好友|✅
 Friends list|好友列表|✅
 Friends details|好友详情|✅
-**Other**|**<其他>**|
+**Other**|**&lt;其他&gt;**|
 Log in to WeChat|登录微信|✅
 Scan code status|扫码状态|✅
 Exit WeChat|退出微信|✅

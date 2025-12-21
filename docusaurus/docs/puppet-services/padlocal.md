@@ -83,10 +83,11 @@ You can telnet the virtual machine IP: 8788, simple debugging will not work.
 Visit [this link](https://api.chatie.io/v0/hosties/puppet_padlocal_xxxxxxxx) to check whether your token is successfully registered, if not, please go back to step 1.
 
 Good:
-{"ip":"47.119.129.29","port":8788}
+`{"ip":"47.119.129.29","port":8788}`
 
 No Good:
-{"ip":"0.0.0.0","port":0}
+`{"ip":"0.0.0.0","port":0}`
+
 
 ### Step 3 : Run python locally
 
@@ -123,7 +124,7 @@ There will be a lot of resources and applications on the official website in the
 - [Python Wechaty如何使用PadLocal Puppet Service, Biofer, Feb, 3, 2021](https://wechaty.js.org/2021/02/03/python-wechaty-for-padlocal-puppet-service/)
 - [.NET Wechaty如何使用PadLocal Puppet Service, Darren, Jan 28, 2021](https://wechaty.js.org/2021/01/28/csharp-wechaty-for-padlocal-puppet-service/)
 
-Read more blogs with the `padlocal` tag at <https://wechaty.js.org/tags.html#padlocal>
+Read more blogs with the `padlocal` tag at [https://wechaty.js.org/tags.html#padlocal](https://wechaty.js.org/tags.html#padlocal)
 
 ## History
 
@@ -134,9 +135,9 @@ Read more blogs with the `padlocal` tag at <https://wechaty.js.org/tags.html#pad
 
 ## More Info
 
-- Repo: <https://github.com/padlocal/wechaty-puppet-padlocal>
+- Repo: [https://github.com/padlocal/wechaty-puppet-padlocal](https://github.com/padlocal/wechaty-puppet-padlocal)
 - Provider: [PadLocal](https://github.com/padlocal)
-- Support & Feedback: <https://github.com/padlocal/wechaty-puppet-padlocal/issues>
+- Support & Feedback: [https://github.com/padlocal/wechaty-puppet-padlocal/issues](https://github.com/padlocal/wechaty-puppet-padlocal/issues)
 - Term of Service (ToS): To-be-added
 - Privacy Policy: To-be-added
 - Service Level Agreement (SLA): To-be-added

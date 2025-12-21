@@ -8,15 +8,15 @@ The term `Puppet` in Wechaty is an Abstract Class for implementing protocol plug
 The plugins are named `PuppetXXX`, like [PuppetPuppeteer](https://github.com/wechaty/wechaty-puppet-puppeteer) is using the [google puppeteer](https://github.com/GoogleChrome/puppeteer) to control the [WeChat Web API](https://wx.qq.com) via a chrome browser, [PuppetPadLocal](https://github.com/padlocal/wechaty-puppet-padlocal) is using the Pad Protocol to connect with WeChat Server.
 For better understanding of the Puppet below are some links listed down:
 
-- Puppet Providers Directory: <https://wechaty.js.org/docs/puppet-providers/>
-- Puppet Compatibility Table: <https://wechaty.js.org/docs/puppet-services/compatibility/>
-- Puppet Development Guide: <https://wechaty.js.org/docs/puppet-providers/diy>
-- Puppet Related Links: <https://github.com/wechaty/wechaty-puppet/wiki/Links>
-- Puppet Documentation: <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html>
+- Puppet Providers Directory: [https://wechaty.js.org/docs/puppet-providers/](https://wechaty.js.org/docs/puppet-providers/)
+- Puppet Compatibility Table: [https://wechaty.js.org/docs/puppet-services/compatibility/](https://wechaty.js.org/docs/puppet-services/compatibility/)
+- Puppet Development Guide: [https://wechaty.js.org/docs/puppet-providers/diy](https://wechaty.js.org/docs/puppet-providers/diy)
+- Puppet Related Links: [https://github.com/wechaty/wechaty-puppet/wiki/Links](https://github.com/wechaty/wechaty-puppet/wiki/Links)
+- Puppet Documentation: [https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html](https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html)
 
 ## Show me the code
 
-For a deeper understanding of the Puppet in Wechaty, you can read its documentation from <https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html> and source code if you like at <https://github.com/wechaty/wechaty-puppet/blob/main/src/puppet.ts>
+For a deeper understanding of the Puppet in Wechaty, you can read its documentation from [https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html](https://wechaty.github.io/wechaty-puppet/typedoc/classes/puppet.html) and source code if you like at [https://github.com/wechaty/wechaty-puppet/blob/main/src/puppet.ts](https://github.com/wechaty/wechaty-puppet/blob/main/src/puppet.ts)
 Below is an architectural diagram of Wechaty Puppet.
 
 ![abstract puppet](../../static/img/docs/architecture.png)
@@ -168,11 +168,11 @@ In order to support receiving more message types, like audio, [look here](https:
 1. The Webhook gets called by the Tencent Server.
 2. The message **event** will be propagated from the `Webhook` class to the `OfficialAccount` class:
 
-    <https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/official-account.ts#L116-L119>
+    [https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/official-account.ts#L116-L119](https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/official-account/official-account.ts#L116-L119)
 
 3. The message **event** will be propagated from the `OfficialAccount` class to the `PuppetOA` class:
 
-    <https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/puppet-oa.ts#L188-L189>
+    [https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/puppet-oa.ts#L188-L189](https://github.com/wechaty/wechaty-puppet-official-account/blob/381ffb820fcc63e4b89a99c433b696e790e06b7a/src/puppet-oa.ts#L188-L189)
 
 4. After message **event** be propagated from the PuppetOA to Wechaty, then the [puppet.messagePayload()](https://github.com/wechaty/wechaty-puppet/blob/763e94194fd1104007fccad4ba4994365890cde8/src/puppet.ts#L834) will be called to get the [Wechaty Message Payload](https://github.com/wechaty/wechaty-puppet/blob/763e94194fd1104007fccad4ba4994365890cde8/src/schemas/message.ts#L103).  Here is the most important part: we need to construct a Wechaty Message Payload from the Raw Message Payload (source code at [here](https://github.com/wechaty/wechaty-puppet/blob/763e94194fd1104007fccad4ba4994365890cde8/src/puppet.ts#L854-L855)):
 

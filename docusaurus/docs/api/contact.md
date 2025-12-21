@@ -17,7 +17,7 @@ All wechat contacts\(friend\) will be encapsulated as a Contact.
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
-| id | `string` | Get Contact id. This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table) |
+| id | `string` | Get Contact id. This function is depending on the Puppet Implementation, see puppet-compatible-table |
 
 ## Global Class `Contact`
 
@@ -25,28 +25,29 @@ All wechat contacts\(friend\) will be encapsulated as a Contact.
 
 | Instance Methods                     | Return type                                                           |
 |--------------------------------------|-----------------------------------------------------------------------|
-| say(text Or Contact Or File Or Url)  | `Promise`                                                             |
+| say(text Or Contact Or File Or Url)  | Promise                                                             |
 | name()                               | `String`                                                              |
-| alias(newAlias)                      | `Promise`                                                             |
+| alias(newAlias)                      | Promise                                                             |
 | friend()                             | `Boolean or null`                                                     |
 | type()                               | `ContactType.Unknown or ContactType.Personal or ContactType.Official` |
 | gender()                             | `ContactGender.Unknown or ContactGender.Male or ContactGender.Female` |
 | province()                           | `String or null`                                                      |
 | city()                               | `String or null`                                                      |
-| avatar()                             | `Promise`                                                             |
-| sync()                               | `Promise`                                                             |
+| avatar()                             | Promise                                                             |
+| sync()                               | Promise                                                             |
 | self()                               | `Boolean`                                                             |
 
 ### Static Methods
 
 | Static Methods            | Return Type                 |
 |---------------------------|-----------------------------|
-| find(query)               | `Promise <Contact \| null>` |
-| findAll(Query Arguements) | `Promise <Contact []>`      |
+| find(query)               | `Promise<Contact \| null>` |
+| findAll(Query Arguements) | `Promise<Contact []>`      |
 
-### contact.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise <void>`
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+### contact.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise<void>`
+
+\> Tips: This function is depending on the Puppet Implementation, see puppet-compatible-table
 
 | Param | Type | Description |
 | :--- | :--- | :--- |
@@ -117,7 +118,7 @@ The method gets the name from a contact.Check the below illustation for implemen
 const name = contact.name()
 ```
 
-### contact.alias\(newAlias\) ⇒ `Promise <null | string | void>`
+### contact.alias\(newAlias\) ⇒ `Promise<null | string | void>`
 
 The method gets or sets or deletes the alias for a contact.Tests show it will failed if set alias too frequently\(60 times in one minute\).
 
@@ -125,7 +126,7 @@ The method gets or sets or deletes the alias for a contact.Tests show it will fa
 | :--- | :--- |
 | newAlias | `none` \| `string` \| `null` |
 
-### Example \( GET the alias for a contact, return {\(Promise&lt;string \| null&gt;\)}\)
+### Example \( GET the alias for a contact, return \{\(`Promise<string \| null>`\)\}\)
 
 ```javascript
 const alias = await contact.alias()
@@ -159,11 +160,11 @@ try {
 }
 ```
 
-### Contact.friend\(\) ⇒ `boolean` \| `null`
+### Contact.friend\(\) ⇒ `boolean` | `null`
 
 The method checks if contact is friend.It returns `true` for friend of the bot and  `false` for not friend of the bot, `null` for unknown.
 
-> Tips: This function is depending on the Puppet Implementation, see [puppet-compatible-table](https://github.com/wechaty/wechaty/wiki/Puppet#3-puppet-compatible-table)
+\> Tips: This function is depending on the Puppet Implementation, see puppet-compatible-table
 
 ### Example
 
@@ -171,7 +172,7 @@ The method checks if contact is friend.It returns `true` for friend of the bot a
 const isFriend = contact.friend()
 ```
 
-### Contact.type\(\) ⇒ `ContactType.Unknown` \| `ContactType.Personal` \| `ContactType.Official`
+### Contact.type\(\) ⇒ `ContactType.Unknown` | `ContactType.Personal` | `ContactType.Official`
 
 This method returns the type of the Contact.Check the example below for implementation.
 
@@ -185,7 +186,7 @@ await bot.start()
 const isOfficial = contact.type() === bot.Contact.Type.Official
 ```
 
-### contact.gender\(\) ⇒ `ContactGender.Unknown` \| `ContactGender.Male` \| `ContactGender.Female`
+### contact.gender\(\) ⇒ `ContactGender.Unknown` | `ContactGender.Male` | `ContactGender.Female`
 
 The method gets the Contact gender.Check the below example for implementation.
 
@@ -197,7 +198,7 @@ The method gets the Contact gender.Check the below example for implementation.
 const gender = contact.gender() === bot.Contact.Gender.Male
 ```
 
-### Contact.province\(\) ⇒ `string` \| `null`
+### Contact.province\(\) ⇒ `string` | `null`
 
 This method gets the region 'province' from a contact.Check the below example for implementation.
 
@@ -207,7 +208,7 @@ This method gets the region 'province' from a contact.Check the below example fo
 const province = contact.province()
 ```
 
-### Contact.city\(\) ⇒ `string` \| `null`
+### Contact.city\(\) ⇒ `string` | `null`
 
 This method gets the region 'city' from a contact.Check the below example for implementation.
 
@@ -217,7 +218,7 @@ This method gets the region 'city' from a contact.Check the below example for im
 const city = contact.city()
 ```
 
-### Contact.avatar\(\) ⇒ `Promise <FileBox>`
+### Contact.avatar\(\) ⇒ `Promise<FileBox>`
 
 This method gets avatar picture from file stream.Check the below example for implementation.
 
@@ -232,7 +233,7 @@ await file.toFile(name, true)
 console.log(`Contact: ${contact.name()} with avatar file: ${name}`)
 ```
 
-### Contact.sync\(\) ⇒ `Promise <void>`
+### Contact.sync\(\) ⇒ `Promise<void>`
 
 The method force reload of data for Contact, Sync data from lowlevel API again.Check the below example for implementation.
 
@@ -254,9 +255,9 @@ const isSelf = contact.self()
 
 ## Static Methods
 
-### Contact.find\(query\) ⇒ `Promise <Contact | null>`
+### Contact.find\(query\) ⇒ `Promise<Contact | null>`
 
-The method finds the contact by name or alias, if the result more than one, return the first one.Try to find a contact by filter: {name: string \| RegExp} / {alias: string \| RegExp}.The returns `Promise.` - If it can find the contact,or return `null`.
+The method finds the contact by name or alias, if the result more than one, return the first one.Try to find a contact by filter: `{name: string | RegExp}` / `{alias: string | RegExp}`.The returns Promise. - If it can find the contact,or return `null`.
 
 | Param | Type |
 | :--- | :--- |
@@ -271,7 +272,7 @@ const contactFindByName = await bot.Contact.find({ name:"ruirui"} )
 const contactFindByAlias = await bot.Contact.find({ alias:"lijiarui"} )
 ```
 
-### Contact.findAll\(\[queryArg\]\) ⇒ `Promise <Contact []>`
+### Contact.findAll\(\[queryArg\]\) ⇒ `Promise<Contact []>`
 
 This method finds contact by `name` or `alias`.If  you use Contact.findAll\(\) get the contact list of the bot. Include the contacts from bot's rooms.
 

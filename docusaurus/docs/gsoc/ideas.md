@@ -26,7 +26,7 @@ Below you can see the list of project ideas that fully match the Wechaty' projec
 
 We want Wechaty to be the universal instant messaging SDK on all IM platforms for chatbot makers to build their great conversational user interface, so while these are our ideas of what we think would make good projects for the summer, we're eager to hear your ideas and proposals as well.
 
-Enhance Whatsapp Puppet <https://github.com/wechaty/wechaty-puppet-whatsapp>. The Puppet abstraction allows Wechaty to provide a consisting API on all IM platforms for build a chatbot. We are supporting Whatsapp already, however, the Wahtsapp support is very limited. We want to implement more functions so that our developers can run their chatbots on Whatsapp to perform as much as action we can.
+Enhance Whatsapp Puppet [https://github.com/wechaty/wechaty-puppet-whatsapp](https://github.com/wechaty/wechaty-puppet-whatsapp). The Puppet abstraction allows Wechaty to provide a consisting API on all IM platforms for build a chatbot. We are supporting Whatsapp already, however, the Wahtsapp support is very limited. We want to implement more functions so that our developers can run their chatbots on Whatsapp to perform as much as action we can.
 
 - **Potential Mentor(s)**: [Huan](https://wechaty.js.org/contributors/huan), [@treeguard](https://github.com/treeguard), [Shan](https://wechaty.js.org/contributors/univerone/)
 - **Category**: Core development
@@ -278,7 +278,7 @@ I have a couple of projects here that were early tests in this direction that I 
 
 It should be language agnostic - we would be working with tokens of intents and creating conversation graphs that link these intents together
 
-Reference: <https://dc.rik.ai/projects/convoai>
+Reference: [https://dc.rik.ai/projects/convoai](https://dc.rik.ai/projects/convoai)
 
 - **Potential Mentor(s)**: [David 'DC' Collier](https://wechaty.js.org/contributors/dcsan/)
 - **Category**: Fun/Peripheral
@@ -294,7 +294,7 @@ We can try to plan a perfect path through a conversation ahead of time, and writ
 But often the user will run the conversation in a completely different way. If they were talking to a real human agent, the conversation would flow in a different sequence.
 
 Some authoring system such as rasa will start with this approach:
-<https://rasa.com/docs/rasa/writing-stories>
+[https://rasa.com/docs/rasa/writing-stories](https://rasa.com/docs/rasa/writing-stories)
 
 But then try to use annotations of actual conversations to refine the conversation flow.
 However, the current tools on the market really are quite un-unsable for this. RASA stories IMHO qucikly devolve to a huge mess that is impossible to view or reason about.
@@ -303,7 +303,7 @@ So this project would be a new start in trying to combine NLU conversation insig
 
 a simple prototype exists here, but it is not connected to any kind of NN model
 
-Reference: <https://dc.rik.ai/projects/convoai>
+Reference: [https://dc.rik.ai/projects/convoai](https://dc.rik.ai/projects/convoai)
 
 - **Potential Mentor(s)**: [David 'DC' Collier](https://wechaty.js.org/contributors/dcsan/)
 - **Category**: Fun/Peripheral
@@ -318,7 +318,7 @@ I wrote a game engine to deliver story like adventure games in a chat system. It
 
 It would be interesting to port this to support WeChat. That would allow people to play group "adventure games" in a chat session.
 
-The engine uses a script format to describe the stories <https://github.com/dcsan/storydata>
+The engine uses a script format to describe the stories [https://github.com/dcsan/storydata](https://github.com/dcsan/storydata)
 
 It has concepts for: rooms, actors, items, and inventory (things uses carry around)
 
@@ -328,17 +328,17 @@ The main runtime engine is all written in typescript.
 
 currently there is a "PAL" class - Platform Abstraction Layer- that already has adapters for Slack and Discord APIs. This project would mainly be to adapt this to wechaty input/output API for delivering games into groups
 
-You can play some of the games built with this on Discord, but this maybe hard inside the GFW. <https://ten.rik.ai/asylum/>
+You can play some of the games built with this on Discord, but this maybe hard inside the GFW. [https://ten.rik.ai/asylum/](https://ten.rik.ai/asylum/)
 
 of course discord and slack have many features wechat does not, such as buttons or "clickable emoji reactions" so the adapter would have to deal with things like a "collector" or different ways to present menus. Wechat's main feature is that it's usable inside China.
 
 Eventually we could make a web based editor for adding new stories, that would allow something like "fan fiction" stories to be created.
 
-play BoPO game on discord here (direct link to our server) <https://discord.com/invite/Qgup6qU>
+play BoPO game on discord here (direct link to our server) [https://discord.com/invite/Qgup6qU](https://discord.com/invite/Qgup6qU)
 
-a bit more info/writeup <https://dc.rik.ai/projects/ten>
+a bit more info/writeup [https://dc.rik.ai/projects/ten](https://dc.rik.ai/projects/ten)
 
-this type of engine could be used to deliver language learning games over wechat too. that was the original idea for this project: <https://dc.rik.ai/projects/comic-english>
+this type of engine could be used to deliver language learning games over wechat too. that was the original idea for this project: [https://dc.rik.ai/projects/comic-english](https://dc.rik.ai/projects/comic-english)
 
 - **Potential Mentor(s)**: [David 'DC' Collier](https://wechaty.js.org/contributors/dcsan/)
 - **Category**: Fun/Peripheral
@@ -368,7 +368,7 @@ the mind map format could be seen as a simple outliner view:
 
 While this is only useful for simple bots, the ease of use and accessibility for building out quick and simple bots fits the "80:20" pareto principle.
 
-some mindmap tools here: <https://awesomeopensource.com/projects/mindmap>
+some mindmap tools here: [https://awesomeopensource.com/projects/mindmap](https://awesomeopensource.com/projects/mindmap)
 
 So the parts of this project would be:
 
@@ -435,9 +435,9 @@ Make Wechaty support macOS
   - Enable message sending and receiving to support Wechaty
   - Messages can be automatically replied, using a more intelligent AI chat robot instead of the current Tencent AI
 - Basic project code
-  - <https://github.com/MustangYM/WeChatExtension-ForMac>
+  - [https://github.com/MustangYM/WeChatExtension-ForMac](https://github.com/MustangYM/WeChatExtension-ForMac)
 - Useful Links
-  - <https://github.com/wechaty/wechaty-puppet-macOS>
+  - [https://github.com/wechaty/wechaty-puppet-macOS](https://github.com/wechaty/wechaty-puppet-macOS)
 
 - **Potential Mentor(s)**: [@MustangYM](https://github.com/mustangym)
 - **Category**: Core development
@@ -471,7 +471,7 @@ Create a Web Component in Angular for a Chat UI for Wechaty.
 
 Useful Links
 
-1. [Fiora](https://fiora.suisuijiang.com/) is an interesting chat application power by socket.io, koa, MongoDB and React. (See: <https://github.com/yinxin630/fiora/issues/185>)
+1. [Fiora](https://fiora.suisuijiang.com/) is an interesting chat application power by socket.io, koa, MongoDB and React. (See: [https://github.com/yinxin630/fiora/issues/185](https://github.com/yinxin630/fiora/issues/185))
 1. [Aurora IMUI is a general IM UI components library, which does not depend on any specific IM SDK.](https://github.com/jpush/aurora-imui)
 1. [Chatvia - Angular Chat App Template](https://themeforest.net/item/chatvia-angular-chat-app-template/28316331)
 

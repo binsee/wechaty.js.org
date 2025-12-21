@@ -5,9 +5,9 @@ sidebar_label: Donut
 
 [![Wechaty Puppet Service Donut](https://img.shields.io/badge/Service-Donut-blue)](donut.md)
 
-- Repo: <https://github.com/juzibot/donut-tester>
+- Repo: [https://github.com/juzibot/donut-tester](https://github.com/juzibot/donut-tester)
 - Provider: [@juzibot](https://github.com/juzibot)
-- Support & Feedback: <https://github.com/juzibot/donut-tester/issues>
+- Support & Feedback: [https://github.com/juzibot/donut-tester/issues](https://github.com/juzibot/donut-tester/issues)
 - Term of Service (ToS): To-be-added
 - Privacy Policy: To-be-added
 - Service Level Agreement (SLA): To-be-added
@@ -28,7 +28,7 @@ Register via WeCom at [jukebox](https://qiwei.juzibot.com/user/login?isWechaty=t
 
 ## Blogs
 
-Read blogs with the `donut` tag at <https://wechaty.js.org/tags.html#donut>
+Read blogs with the `donut` tag at [https://wechaty.js.org/tags.html#donut](https://wechaty.js.org/tags.html#donut)
 
 ## History
 

@@ -31,9 +31,9 @@ in the most useful and least error-prone ways.
 ## Getting the raw documentation
 
 Though Wechaty's documentation is intended to be read as HTML at
-<https://wechaty.js.org/docs/>, we edit it as a collection of markdown files for
+[https://wechaty.js.org/docs/](https://wechaty.js.org/docs/), we edit it as a collection of markdown files for
 maximum flexibility. These files live in the top-level `docusaurus/docs/`
-directory at Wechaty Website repository at <https://github.com/wechaty/wechaty.js.org>.
+directory at Wechaty Website repository at [https://github.com/wechaty/wechaty.js.org](https://github.com/wechaty/wechaty.js.org).
 
 If you'd like to start contributing to our docs, get the latest version of
 Wechaty website from the [website repository](https://github.com/wechaty/wechaty.js.org).
@@ -43,8 +43,8 @@ Wechaty website from the [website repository](https://github.com/wechaty/wechaty
 Wechaty's documentation uses the [Docusaurus](https://docusaurus.io/) documentation system v2.
 The basic idea is that powered by markdown with JSX supported(MDX), built using React documentation.
 
-- <https://docusaurus.io/>
-- <https://mdxjs.com/>
+- [https://docusaurus.io/](https://docusaurus.io/)
+- [https://mdxjs.com/](https://mdxjs.com/)
 
 To build the documentation locally, install NPM dependencies:
 
@@ -171,7 +171,7 @@ documentation:
 
 - **Wechaty gRPC** &mdash; it's all capitalized.
 
-Other than these words we are following this <https://developers.google.com/style/word-list>.
+Other than these words we are following this [https://developers.google.com/style/word-list](https://developers.google.com/style/word-list).
 
 ## Guidelines for Markdown files
 
@@ -204,7 +204,7 @@ documentation:
   ##### Five
   ```
 
-  Refer to this for more: <https://guides.github.com/features/mastering-markdown/>.
+  Refer to this for more: [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/).
 
 ## Special Thanks
 

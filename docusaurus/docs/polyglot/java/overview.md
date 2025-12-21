@@ -6,12 +6,12 @@ sidebar_label: Java
 
 [![Kotlin(Java) Wechaty](https://img.shields.io/badge/Wechaty-Kotlin-orange)](https://github.com/wechaty/java-wechaty)
 
-- GitHub Repo <https://github.com/wechaty/java-wechaty>
-- Getting Started Template Repo <https://github.com/wechaty/java-wechaty-getting-started>
+- GitHub Repo [https://github.com/wechaty/java-wechaty](https://github.com/wechaty/java-wechaty)
+- Getting Started Template Repo [https://github.com/wechaty/java-wechaty-getting-started](https://github.com/wechaty/java-wechaty-getting-started)
 
 ## Getting Started
 
-Template Repo: <https://github.com/wechaty/java-wechaty-getting-started>
+Template Repo: [https://github.com/wechaty/java-wechaty-getting-started](https://github.com/wechaty/java-wechaty-getting-started)
 
 ```sh
 git clone git@github.com:wechaty/java-wechaty-getting-started.git
@@ -22,7 +22,7 @@ make bot
 
 ## Blogs
 
-Read blogs with the `java` tag at <https://wechaty.js.org/tags.html#java>
+Read blogs with the `java` tag at [https://wechaty.js.org/tags.html#java](https://wechaty.js.org/tags.html#java)
 
 ## History
 

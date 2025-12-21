@@ -119,8 +119,8 @@ main().catch(console.error)
 
 ## Important Links
 
-- Repo: <https://github.com/wechaty/wechaty-puppet-gitter>
-- Support & Feedback: <https://github.com/wechaty/wechaty-puppet-gitter/issues>
+- Repo: [https://github.com/wechaty/wechaty-puppet-gitter](https://github.com/wechaty/wechaty-puppet-gitter)
+- Support & Feedback: [https://github.com/wechaty/wechaty-puppet-gitter/issues](https://github.com/wechaty/wechaty-puppet-gitter/issues)
 
 ## Blogs
 
