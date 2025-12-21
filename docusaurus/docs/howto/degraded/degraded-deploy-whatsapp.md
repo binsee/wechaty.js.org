@@ -79,21 +79,20 @@ mkdir my-bot
 cd my-bot
 ```
 
-2. Install the dependencies using the following commands:
+1. Install the dependencies using the following commands:
 
 ```bash
 npm install wechaty
 npm install qrcode-terminal
 ```
 
-3. Add the dependencies for using the bot with Whatsapp.
+1. Add the dependencies for using the bot with Whatsapp.
 
 ```bash
 npm install wechaty-puppet-whatsapp
 ```
 
-4. Create a new folder `src` and add a file `my-bot.js`. Add your custom functions to the code snippet below:
-
+1. Create a new folder `src` and add a file `my-bot.js`. Add your custom functions to the code snippet below:
 
 ```ts
 const {
@@ -114,7 +113,7 @@ const bot = new Wechaty()
  */
 ```
 
-3. After you are done with the file, you can run the bot using the following commands:
+1. After you are done with the file, you can run the bot using the following commands:
 
 ```bash
 export WECHATY_LOG=verbose

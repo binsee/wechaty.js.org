@@ -44,7 +44,6 @@ All wechat contacts\(friend\) will be encapsulated as a Contact.
 | find(query)               | `Promise<Contact \| null>` |
 | findAll(Query Arguements) | `Promise<Contact []>`      |
 
-
 ### contact.say\(textOrContactOrFileOrUrlLinkOrMiniProgram\) ⇒ `Promise<void>`
 
 \> Tips: This function is depending on the Puppet Implementation, see puppet-compatible-table

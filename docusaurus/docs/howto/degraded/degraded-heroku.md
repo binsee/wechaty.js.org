@@ -75,7 +75,6 @@ This guide demonstrates running the ding-dong bot with Heroku CLI. However you c
 
    `git push heroku feature:main`
 
-
 ### Running the bot
 
 To run the Bot on the Heroku CLI use the command `heroku local web` on your terminal. The ding-dong starter bot  is now successfully running.

@@ -19,8 +19,6 @@ Bot itself will be encapsulated as a ContactSelf.
     * [contactSelf.signature\(signature\) ⇒ `Promise<string>`](contact-self.md#contactselfsignaturesignature)
     * [contactSelf.name\(\[name\]\) ⇒ `Promise<void>` | string](contact-self.md#contactselfname-⇒-promisestring)
 
-
-
 ### contactSelf.avatar\(\[file\]\) ⇒ `Promise<void | FileBox>`
 
 GET / SET bot avatar

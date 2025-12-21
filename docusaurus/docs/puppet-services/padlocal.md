@@ -88,7 +88,6 @@ Good:
 No Good:
 `{"ip":"0.0.0.0","port":0}`
 
-
 ### Step 3 : Run python locally
 
 python-wechaty-getting-started you need Python3.7+

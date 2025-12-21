@@ -510,7 +510,6 @@ await room.say('ding - created')
 
 ### Room.findAll(query) ⇒ `Promise`
 
-
 The method finds the  room by by filter: `{topic: string | RegExp}`,  and returns all the matched rooms.Check the below example for implementation.
 
 | Param | Type |

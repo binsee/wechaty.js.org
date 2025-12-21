@@ -95,7 +95,7 @@ mkdir my-bot
 cd my-bot
 ```
 
-2. Install the dependencies using the following commands:
+1. Install the dependencies using the following commands:
 
 ```bash
 npm install wechaty
@@ -128,7 +128,7 @@ const bot = new Wechaty()
  */
 ```
 
-3. After you are done with the file, you can run the bot using the following commands:
+1. After you are done with the file, you can run the bot using the following commands:
 
 ```bash
 export WECHATY_LOG=verbose
@@ -173,4 +173,3 @@ wechaty-puppet-whatsapp is an open-source project. If you’re interested in con
 
 - [@univerone](https://wechaty.js.org/contributors/univerone)
 - [@huan](https://github.com/huan) [Huan LI](http://linkedin.com/in/zixia) [zixia@zixia.net](mailto:zixia@zixia.net)
-
