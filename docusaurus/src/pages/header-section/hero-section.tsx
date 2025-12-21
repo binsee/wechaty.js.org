@@ -23,6 +23,14 @@ const HeroSection = () => {
         <a href="https://wechaty.js.org/docs/">
           <button id="letsDiveInButton"> Let’s Dive In</button>
         </a>
+        <div id="heroExtraButtons">
+          <a href="https://preangel.ai" target="_blank">
+            <button className="heroSecondaryButton"> PreAngel.AI </button>
+          </a>
+          <a href="https://ship.fail" target="_blank">
+            <button className="heroSecondaryButton"> Ship.Fail </button>
+          </a>
+        </div>
         <img
           alt="Chatbot"
           id="heroImageMobile"

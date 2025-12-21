@@ -17,6 +17,8 @@ const navbar = {
       ],
     },
     { type: 'localeDropdown', position: 'right' },
+    { label: 'PreAngel.AI',     href: 'https://preangel.ai',          position: 'right' },
+    { label: 'Ship.Fail',       href: 'https://ship.fail',            position: 'right' },
     { label: 'GitHub',          href: 'https://github.com/wechaty/wechaty#readme',   position: 'right' },
   ],
 }
